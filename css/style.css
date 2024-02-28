@@ -61,6 +61,11 @@ nav #perguntas-nav img{
   font-size: 22px;
   height: 32px;
   cursor: pointer;
+  transition:.1s linear;
+}
+#perguntas-nav a:hover{
+  transition:.1s linear;
+  color:rgba(255, 0, 0, 0.553);
 }
 
 #perguntas-nav #hospedes{
