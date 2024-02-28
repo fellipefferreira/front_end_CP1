@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin:0;
   padding:0;
@@ -8,6 +9,7 @@
   list-style:none;
   box-sizing:border-box;
   font-size: 20px;
+  border: 1px solid red;
 }
 body{
   padding: 0 5%;
@@ -117,22 +119,20 @@ nav #perguntas-nav img{
 
 
 /* conteudo geral */
-#produto{
-
-}
 
 .titulo_conteudo{
   display:flex;
   justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-end;
-  flex-wrap:wrap;
   padding:20px;
 }
-.titulo_conteudo .titulo_img{
+
+.titulo_img{
   display:flex;
-  gap:10px;
   justify-content: left;
+}
+
+.titulo_img h1{
+  margin-left: 10px;
 }
  
 .titulo_conteudo h1{
@@ -141,18 +141,18 @@ nav #perguntas-nav img{
   font-size:23px;
 }
 
-.conteudo{
+.acoes-fotos{
   display:flex;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-end;
   gap:20px;
 }
-.compartilhar{
-  display:flex;
-  gap:5px;
+.fotos-acoes{
+  display:flex; 
 }
-.compartilhar h2{
+.fotos-acoes h2{
+  margin-left: 5px;
   text-decoration:underline;
   font-family: "Poppins", sans-serif;
   font-weight:300;
@@ -160,53 +160,27 @@ nav #perguntas-nav img{
   cursor:pointer;
   color:rgba(0, 0, 0, 0.871)
 }
-.compartilhar h2:hover{
+.fotos-acoes h2:hover{
   color:rgb(232, 55, 55);
 }
 
-.salvar{
+#fotos-local {
   display:flex;
-  gap:5px;
- 
-}
-.salvar h2{
-  text-decoration:underline;
-  font-family: "Poppins", sans-serif;
-  font-weight:300;
-  font-size:20px;
-  cursor:pointer;
-  color:rgba(0, 0, 0, 0.871);
-}
-.salvar h2:hover{
-  color:rgb(232, 55, 55);
-}
-
-.container_img_1{
-  display:flex;
-  justify-content: center;
-  align-items:flex-start;
-  align-content:flex-end;
   flex-wrap:wrap;
   flex-direction:row;
   width:100%;
+  margin: auto;
+  justify-content: center
 }
 
-
-
-
-
-
-#img_capa{
-  width:500px;
-  height:368px;
-  border-radius:15px 0px 0px 15px;
+#img_capa {
+  height: 0350px;
+  border-radius: 12px 0px 0px 12px;
+ margin:  auto 10px;
 }
-#img_domo{
-  width:270px;
-  height:auto;
-}
-#img_domo_ultimo{
-  width:270px;
-  height:180px;
 
+.img_domo {
+  height:170px;
+  width: 300px;
 }
+
