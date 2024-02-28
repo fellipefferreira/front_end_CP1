@@ -9,6 +9,7 @@
   list-style:none;
   box-sizing:border-box;
   font-size: 20px;
+  /* border: 1px solid red; */
 }
 body{
   padding: 0 5%;
@@ -127,10 +128,9 @@ nav #perguntas-nav img{
   margin-top:30px;
 }
 
-
-
 /* conteudo geral */
 
+/* fotos do local */
 .titulo_conteudo{
   display:flex;
   justify-content: space-between;
@@ -201,5 +201,129 @@ nav #perguntas-nav img{
 #img_domo_5{
   border-radius: 0px 0px 12px 0px;
 }
+
+/* informacoes basicas */
+.geral {
+  width: 50%;
+}
+#info {
+  display: flex;
+  justify-content: start;
+  justify-content: space-between;
+}
+#localizacao h2 {
+  font-size: 25px;
+  margin: 10px 0 5px 10px ;
+}
+
+#info ul {
+  display: flex;
+  margin: 3px 0 0 10px ;
+}
+
+#info ul li {
+  margin: 0 5px 10px 0  ;
+  font-size: 16px;
+}
+
+#comentarios {
+  display: flex;
+}
+
+#comentarios img {
+  width: 18px;
+  margin: 0 0 10px 0;
+}
+
+#comentarios p {
+  font-size: 16px;
+}
+#comentarios p a{
+  color: black;
+  text-decoration: underline;
+}
+
+
+/* tabela de precos */
+#card-preco {
+  display: flex;
+  justify-content: end;
+  width: 33%;
+  border: 1px solid rgba(74, 75, 75, 0.567);
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+#preco-titulo {
+  margin: auto;
+  display: flex;
+  margin: 20px 10px 0 40px ;
+  justify-content: start;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#preco-titulo p {
+  margin: 3px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+#datas{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.check {
+  border: 1px solid rgba(74, 75, 75, 0.567);
+  text-align: start;
+  font-size: 15px;
+  padding: 5px;
+  width: 40%;
+  border-radius: 10px 0 0 0px ;
+  color: black;
+}
+.check:last-child {
+  border-radius: 0px 10px 0 0 ;
+  border-left: 0px;
+}
+.check p {
+  color: rgb(24, 26, 26);
+  font-size: 18px;
+  
+}
+
+#pessoas {
+  display: flex;
+  justify-content: center;
+}
+
+#pessoas-text {
+  border: 1px solid rgba(74, 75, 75, 0.567);
+  width: 80%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#comprar {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  
+}
+
+#comprar button {
+  padding: 15px;
+  background: linear-gradient(to right, #d90e41, #ff0048);
+  color: white;
+  width: 85%;
+  border-radius: 15px;
+}
+
+
+
+
 
 
