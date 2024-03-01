@@ -10,7 +10,7 @@
   list-style:none;
   box-sizing:border-box;
   font-size: 20px;
-  /* border: 1px solid red;   */
+  /* border: 1px solid red;    */
 }
 body{
   padding: 0 5%;
@@ -384,10 +384,10 @@ nav #perguntas-nav img{
 }
 
 .borda {
-  border: 2px solid rgba(74, 75, 75, 0.567);
+  border: 1px solid rgba(74, 75, 75, 0.567);
   border-radius: 15px;
   padding: 10px;
-  padding: 0;
+  padding: 12px 10px;
 }
 .borda:last-child {
   margin-left: 15px;
