@@ -10,7 +10,7 @@
   list-style:none;
   box-sizing:border-box;
   font-size: 20px;
-  /* border: 1px solid red;   */
+  border: 1px solid red;  
 }
 body{
   padding: 0 5%;
@@ -132,76 +132,74 @@ nav #perguntas-nav img{
 /* conteudo geral */
 
 /* fotos do local */
-.titulo_conteudo{
-  display:flex;
+.box-title{
+  display: flex;
   justify-content: space-between;
-  padding:20px;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.titulo_img{
-  display:flex;
-  justify-content: left;
+.box-title h1 {
+  font-size: 1.6rem;
+
 }
 
-.titulo_img h1{
-  margin-left: 10px;
-}
- 
-.titulo_conteudo h1{
-  font-family: "Poppins", sans-serif;
-  font-weight:600;
-  font-size:23px;
+.box-title--btns {
+  display: flex;
+  flex-direction: row;
 }
 
-.acoes-fotos{
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-end;
-  gap:20px;
-}
-.fotos-acoes{
-  display:flex; 
-}
-.fotos-acoes h2{
-  margin-left: 5px;
-  text-decoration:underline;
-  font-family: "Poppins", sans-serif;
-  font-weight:300;
-  font-size:20px;
-  cursor:pointer;
-  color:rgba(0, 0, 0, 0.871)
-}
-.fotos-acoes h2:hover{
-  color:rgb(232, 55, 55);
+.box-title--btn {
+  /* Colocando o icone do lado do texto */
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
 
-#fotos-local {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:row;
-  width:100%;
-  margin: auto;
-  justify-content: center
+.box-title--btn a {
+  margin-left: 6px;
+  font-size: 1rem;
+  color: #222;
+}
+.photos {
+  display: grid;
+  grid-template-rows: 180px 180px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px 0 ;
+  gap: 10px;
+
 }
 
-#img_capa {
-  height: 350px;
-  border-radius: 12px 0px 0px 12px;
-  margin:  auto 10px;
+.photos div {
+  width: 100%;
+  height: 100%;
 }
 
-.img_domo {
-  height:170px;
-  width: 300px;
-}
-.img_domo:last-child{
-  border-radius: 0px 12px 0px 0px;
+.photos img {
+  width: 100%;
+  height: 100%;
+  /* Para não distorcer a imagem */
+  object-fit: cover;
 }
 
-#img_domo_5{
-  border-radius: 0px 0px 12px 0px;
+.photos .img1 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
 }
+
+.photos .img1 img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.photos .img3 img {
+  border-top-right-radius: 15px;
+}
+
+.photos .img5 img {
+  border-bottom-right-radius: 15px;
+}
+
 
 /* informacoes basicas */
 .geral {
@@ -214,17 +212,16 @@ nav #perguntas-nav img{
 }
 #localizacao h2 {
   font-size: 25px;
-  margin: 10px 0 5px 10px ;
   font-family: "Quicksand", sans-serif;
 }
 
 #info ul {
   display: flex;
-  margin: 3px 0 0 10px ;
+  gap: 10px;
+  align-items: center;
 }
 
 #info ul li {
-  margin: 0 5px 10px 0  ;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
@@ -258,15 +255,13 @@ nav #perguntas-nav img{
   border: 1px solid rgba(74, 75, 75, 0.567);
   flex-direction: column;
   border-radius: 15px;
-  height:250px;
-
+  height:300px;
+  padding: 20px;
 }
 
 #preco-titulo {
-  margin: auto;
   display: flex;
-  margin: 20px 10px 0 40px ;
-  justify-content: start;
+   justify-content: start;
   font-size: 20px;
   font-weight: bold;
   font-family: "Red Hat Display", sans-serif;
@@ -345,17 +340,9 @@ nav #perguntas-nav img{
 /* regras e descricao */
 #desc-reg {
   display: flex;
+  margin: 15px 0;
   justify-content: space-between;
   width: 100%;
-  padding: 10px 20px ;
-}
-
-#regra-text {
-  display: flex;
-  justify-content: start;
-  justify-content: space-between;
-  padding: 15px;
-  margin: 15px;
 }
 
 #desc {
@@ -371,7 +358,6 @@ nav #perguntas-nav img{
   color: rgb(14, 13, 13);
   font-weight: 550;
   margin-top: 10px;
-  margin-left: 5px;
   font-size:16px;
   font-family: "Quicksand", sans-serif;
 }
@@ -386,8 +372,7 @@ nav #perguntas-nav img{
 .borda {
   border: 2px solid rgba(74, 75, 75, 0.567);
   border-radius: 15px;
-  padding: 10px;
-  padding: 0;
+  padding: 15px;
 }
 .borda:last-child {
   margin-left: 15px;
