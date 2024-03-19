@@ -10,7 +10,7 @@
   list-style:none;
   box-sizing:border-box;
   font-size: 20px;
-  /* border: 1px solid red;    */
+  border: 1px solid red;   
 }
 body{
   padding: 0 5%;
@@ -167,7 +167,6 @@ nav #perguntas-nav img{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 30px 0 ;
   gap: 10px;
-
 }
 
 .photos div {
@@ -413,7 +412,14 @@ nav #perguntas-nav img{
   margin-right: 20px;
 }
 
+footer {
+  display: grid;
+  grid-template-rows: 180px 180px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  margin: 30px 0 ;
+  gap: 10px;
 
+}
 
 
 
