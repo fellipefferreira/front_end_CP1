@@ -148,12 +148,14 @@ nav #perguntas-nav img{
 
 .menu2_content.open-menu{
   max-height: 500px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.314);
 }
 
 .menu2{
   padding:7px;
   margin:10px;
   font-family: Arial;
+ 
 }
 
 .menu2 .info-menu-header h2:first-child{
