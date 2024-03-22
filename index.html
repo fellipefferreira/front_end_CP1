@@ -10,6 +10,7 @@
 <body>
     <header>
         <nav>
+
             <a id="logo-nav" href="./index.html">
                 <img src="./img/logo.png" alt='logo'>
             </a>
@@ -23,9 +24,15 @@
                     <a>Qualquer semana</a>
                 </li>
 
-                <li> 
-                    <a id="hospedes">Hóspedes</a>
-                    <img src="./img/circulo.png" alt="pesquisa" id="pesquisa">
+                <li id="hospedes-li"> 
+                    <a id="hospedes">Hóspedes?</a>
+                    <!-- <img src="./img/circulo.png" alt="pesquisa" id="pesquisa"> -->
+                    <div id="procurar-preenchido">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                        </svg>
+                    </div>
+                    
                 </li>
                
             </ul>
@@ -37,7 +44,7 @@
                 
                 <li>
                     <a>
-                        <img src="./img/globe.png" alt="linguagem a ser escolhida, definido como um globo" class="icones">
+                        <img src="./img/globe-svgrepo-com.svg" alt="linguagem a ser escolhida, definido como um globo" class="icones">
                     </a>
                 </li>
                 
@@ -57,15 +64,10 @@
                     </div>
                 </div>
 
-                <li>
-                    <a href="#" onclick="toggleMenu()"> 
-                        <img src="./img/menu.png" alt="menu" class="icones">
-                    </a>
-
-                    <a href="" > 
-                        <img src="./img/user.png" alt="perfil" class="icones">
-                    </a>
-
+                <li onclick="toggleMenu()">
+                    <img src="./img/menu.png" alt="menu" class="icones">
+                
+                    <img src="./img/user.png" alt="perfil" class="icones perfil">
                 </li>
             </ul>
             
@@ -131,7 +133,7 @@
                     <h2>Casa de cúpula em Monteiro Lobato, Brasil</h2>
                 </div>
                 
-                <ul>
+                <ul id="lugar-hospedagem">
                     <li>2 hóspedes</li>
                     <li>1 quarto</li>
                     <li>1 cama</li>
@@ -149,7 +151,7 @@
                     
                     <li>
                         <p>
-                            <a href="">02 comentários</a>
+                            <a href="#">02 comentários</a>
                         </p>
                     </li>
                 </ul>
@@ -236,28 +238,24 @@
             <div id="card-preco">
                 
                 <div id="preco-titulo">
-                    R$1.022 <p>noite</p>
+                    Adicione datas para ver os preços
                 </div>
 
-                <div>
+                
 
-                    <div id="datas">
-                            <div class="check">Check-in
-                                <p>Adicione uma data</p>
-                            </div>
-
-                            <div class="check">Check-out
-                                <p>Adicione uma data</p>
-                            </div>                    
-                    </div>
                     
-                    <div id="pessoas">
-                        <div class="check" id="pessoas-text">
-                            Hóspedes
-                            <p>Quantas pessoas ?</p>
-                        </div>
-                    </div>
+                <div class="check-in"> <strong>Check-in</strong>
+                    <p>Adicione uma data</p>
                 </div>
+
+                <div class="check-out"> <strong>Check-out</strong>
+                    <p>Adicione uma data</p>
+                </div>                    
+                
+                
+                    <div id="pessoas">  <strong>Hóspedes</strong>
+                        <p>Quantas pessoas ?</p>
+                    </div>
 
                 <div id="comprar">
                     <button id="botao"> Conferir disponibilidade</button>
