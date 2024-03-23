@@ -4,3 +4,4 @@ let menu = document.getElementById("menu2_content");
 toggleMenu = () => {
     menu.classList.toggle("open-menu");
 }
+
