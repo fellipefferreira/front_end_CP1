@@ -10,7 +10,7 @@
   list-style:none;
   box-sizing:border-box;
   font-size: 1rem;
-  border: 1px solid red;   
+  /* border: 1px solid red;    */
   object-fit: cover;
 }
 
@@ -296,7 +296,6 @@ nav #perguntas-nav #hospedes-li svg{
   margin: 0 4px;
 }
 
-
 #comentarios {
   display: flex;
   align-items: center;
@@ -340,11 +339,6 @@ nav #perguntas-nav #hospedes-li svg{
   font-weight: 800;
 }
 
-.check {
-  width: 40%;
-  border-radius: 10px 0 0 0px ;
-  color: black;
-}
 .check-in, .check-out {
   width: 100%;
   grid-area: in;
@@ -385,6 +379,7 @@ nav #perguntas-nav #hospedes-li svg{
   padding: 1.2rem;
   background: linear-gradient(to right, #d90e41, #ff0048);
   color: #FFF;
+  border: none;
   width: 100%;
   border-radius: 15px;
   font-family: "Quicksand", sans-serif;
@@ -396,47 +391,145 @@ nav #perguntas-nav #hospedes-li svg{
   background:black;
 }
 
-/* regras e descricao */
-#desc-reg {
+/* Anfitrio*/
+
+#anfitriao {
+  margin: 30px 0;
   display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#anfitriao img{
+  height: 2.5rem;
+  border-radius: 100%;
+}
+
+#anfitriao .dados h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#anfitriao .dados span:not(:last-child):after{
+  content: "•";
+  margin: 0 4px;
+  font-size: 0.6rem;
+}
+
+/* qualidades do local */
+
+.qualidades {
+  margin: 40px 0;
+}
+
+.rows{
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 15px 0 15px 5px;
+}
+
+.icons {
+  width: 2rem;
+}
+ 
+.texto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+} 
+
+/* texto irritante */
+
+.textao{
+  margin: 40px 0;
+}
+
+.titulo{
+  margin-top: 20px ;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(80, 76, 76);
+  border-radius: 10px;
+  font-weight: 520;
+  background-color: #e4dddd89;
+}
+
+.titulo a {
+  text-decoration: underline;
+  border: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+#muito_texto {
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  margin: 10px 0;
+}
+
+#mais_info {
+  font-size: 1.2rem;
+  text-decoration: underline;
   margin: 15px 0;
-  justify-content: space-between;
-  width: 100%;
 }
 
-#desc {
-  width: 60%;
+/* onde vai dormir */
+
+.dorminhoco {
+  margin: 40px 0;
 }
 
-#desc-reg h1{
-  font-size: 25px;
-  font-family: "Quicksand", sans-serif;
+.dormir_titulo {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  font-weight: 520;
 }
 
-#desc-reg h3{
-  color: rgb(14, 13, 13);
-  font-weight: 550;
-  margin-top: 10px;
-  font-size:16px;
-  font-family: "Quicksand", sans-serif;
-}
-#desc-reg p{
-  font-weight: 450;
-  color: rgb(37, 35, 35);
-  margin-left: 10px;
-  font-size: 12px;
-  font-family: "Quicksand", sans-serif;
+.dormir_img img{
+  height: 200px;
+  border-radius: 20px;
+  margin: 5px 0;
 }
 
-.borda {
-  border: 1px solid rgba(74, 75, 75, 0.567);
-  border-radius: 15px;
+.dormir_texto h4 {
+  font-size: 1.2rem;
+}
+
+.dormir_texto p {
+  margin-bottom: 20px;
+}
+
+/* oferece */
+
+.oferece {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.rows{
+  margin: 0;
+}
+
+.btn_oferecido button {
+  width: 350px;
+  margin-top: 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
   padding: 15px;
-}
-.borda:last-child {
-  margin-left: 15px;
+  font-size: 1.2rem;
+  background-color: #FFF;
+  margin-bottom: 20px ;
 }
 
+.btn_oferecido button:hover {
+  transition: 0.3s;
+  background-color: #e1dede;
+}
 
 /* comentarios - opiniao */
 
