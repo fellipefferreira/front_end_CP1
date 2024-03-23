@@ -420,14 +420,15 @@ nav #perguntas-nav #hospedes-li svg{
 
 .qualidades {
   margin: 40px 0;
+  
 }
 
-.rows{
-
+.rows{  
   display: flex;
   gap: 10px;
   align-items: center;
   margin: 15px 0 15px 5px;
+  padding: 10px 0;
 }
 
 .icons {
@@ -532,38 +533,52 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 /* comentarios - opiniao */
+.avaliar {
+  gap: 30px;
+  margin:  40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
-.avaliar{
+.info_people {
   display: flex;
-  justify-content: start;
-  flex-direction: column;
-}
-.one-user{
-  display:flex;
-  margin: 10px 0px;
-}
-.one-user .comentarios-info h1{
-  display:flex;
-  flex-direction: column;
-  font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-.stars {
-  width: 80px;
+.info_people img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
 }
 
-.comentarios-info  p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 17px;
+.info_people h3 {
+  font-size: 1.1rem;
+  font-weight: 550;
 }
 
-.img_comentario {
-  width: 60px;
-  height: 60px;
-  border-radius: 40px;
-  margin-right: 20px;
+.classificacao {
+  align-items: center;
+  display: flex;
 }
+
+.estrela {
+  display: flex;
+}
+
+.classificacao div:not(:first-child)::before{
+  content: "•";
+  margin: 0 4px ;
+}
+
+.estadia {
+  font-size: 0.9rem;
+  color: rgb(146, 148, 148);
+}
+
+
+
 
 footer {
   display: grid;
