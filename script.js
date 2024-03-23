@@ -19,22 +19,7 @@ let estadiaFavorita = []
 const salvar = document.getElementById('salvar')
 const salvo = document.getElementById('btnSalvar')
 
-const renderizarLista = () =>{
-    //limpa a tela antes de renderizar
-        
-        //cria uma nova imagem
-        const favoritoImg = document.createElement('img')
-        //adiciona imagem ao item img
-        favorito.src = 'img/heart-vazio.png'
-        //muda o cursor da imagem para mãozinha de clique
-        favorito.style.cursor = 'pointer'
-        //adiciona evento de clique à imagem
-        favorito.addEventListener('click',(e)=>{
-            favoritoClicado(e,filme)
-        })
-        //adiciona a imagem ao item da lista
-        itemLista.append(favorito)
-    }
+
 
 
 
