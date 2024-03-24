@@ -454,8 +454,7 @@ nav #perguntas-nav #hospedes-li svg{
 .titulo{
   margin-top: 20px ;
   font-size: 1.2rem;
-  padding: 0.5rem;
-  border: 1px solid rgb(80, 76, 76);
+  padding: 1rem;
   border-radius: 10px;
   font-weight: 520;
   background-color: #e4dddd89;
@@ -487,7 +486,7 @@ nav #perguntas-nav #hospedes-li svg{
   margin: 40px 0;
 }
 
-.dormir_titulo {
+.dorminhoco h1 {
   margin-top: 20px;
   font-size: 1.5rem;
   margin: 20px 0;
@@ -496,7 +495,7 @@ nav #perguntas-nav #hospedes-li svg{
 
 .dormir_img img{
   height: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 5px 0;
 }
 
@@ -509,6 +508,13 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 /* oferece */
+
+.oferece_titulo h1 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  font-weight: 520;
+}
 
 .oferece {
   margin-top: 40px;
