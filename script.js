@@ -4,6 +4,19 @@ let menu = document.getElementById("menu2_content");
 toggleMenu = () => {
     menu.classList.toggle("open-menu");
 }
+
+let heartSave = document.getElementById("imgHeart");
+toggleHeart = () => {
+    heartSave.classList.toggle("openHeart")
+}
+
+// function changeIcon(){
+//     var img = document.getElementById("imgHeart")
+//     img.src = "./img/heart.png"
+// }
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var salvar = document.getElementById('salvar');
  
