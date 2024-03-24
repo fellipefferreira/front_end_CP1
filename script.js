@@ -4,76 +4,31 @@ let menu = document.getElementById("menu2_content");
 toggleMenu = () => {
     menu.classList.toggle("open-menu");
 }
-
-const estadia = [
-    {
-        id:0,
-        estado:'Salvo'
+document.addEventListener('DOMContentLoaded', function() {
+    var salvar = document.getElementById('salvar');
+ 
+    // Adiciona um ouvinte de evento para o clique no botão
+    salvar.addEventListener('click', function() {
+        var salvo = localStorage.getItem('salvo') === 'true';
+ 
+        // Alterna entre os estados "salvo" e "não salvo"
+        if (salvo) {
+            // Se estava salvo, agora não está mais
+            localStorage.removeItem('salvo');
+            salvo.classList.remove('salvo');
+         
+        } else {
+            // Se não estava salvo, agora está
+            localStorage.setItem('salvo', 'true');
+            salvar.classList.add('salvo');
+         
+        }
+    });
+ 
+    // Verifica se há algo salvo no localStorage quando a página é carregada
+    if (localStorage.getItem('salvo') === 'true') {
+        // Se algo estiver salvo, você pode fazer algo aqui, por exemplo, adicionar uma classe ao botão
+        salvar.classList.add('salvo');
     }
-]
-
-//  Criando o array da estadia favoritada
-let estadiaFavorita = []
-
-// Pegando elemento HTML
-const salvar = document.getElementById('salvar')
-const salvo = document.getElementById('btnSalvar')
-
-
-
-
-
-
-
-//  Função para click de favorito
-const favoritoClick = (eventoDeClique, objetoEstadia) => {
-    const favoriteState = {
-        favorited:'img/heart.png',
-        notFavorited:'img/heart-vazio.png'
-    }
-    // valida se osrc da imagem clicada inclui o caminho da imagem  não favoritada
-    if(eventoDeClique.target.src.includes(favoriteState.notFavorited)){
-        eventoDeClique.target.src = favoriteState.favorited
-        saveToLocalStorage(objetoEstadia)
-    }else{
-        //senão, manter a imagem de não favoritado e executar a função de remover
-        //do localStorage, passando como parâmetro o id do filme
-        eventoDeClique.target.src = favoriteState.notFavorited
-        removeFromLocalStorage(objetoEstadia.id)
-    }
-}
-
-//Função para salvar o filme no local storage
-
-const saveToLocalStorage = (objetoEstadia) => {
-    //checa se já existe um campo de favorito no local storage
-    //Se tiver, ele salva no array estadiaFavorita
-    if(localStorage.getItem('favorito')){
-        estadiaFavorita = JSON.parse(localStorage.getItem('favorito'))
-    }
-    //Adiciona a condição de salvo no array de estadia favorita
-    estadiaFavorita.push(objetoEstadia)
-    //Tranforma o array em string para poder salvar no local storage
-    const estadiaJSON = JSON.stringify(estadiaFavorita)
-    //Salva no local storage
-    localStorage.setItem('favoritos',estadiaJSON)
-}
-
-//Função para remover favorito no local storage
-
-function removeFromLocalStorage(id){
-    //checa se já existe um campo de favoritos no LocalStorage
-    //se houver, ele salva no array filmesFavoritos
-    if(localStorage.getItem('favorito')){
-        estadiaFavorita = JSON.parse(localStorage.getItem('favorito'));
-    }
-    //procura no array o id do filme
-    const procurarSalvo = estadiaFavorita.find(like => like.id === id)
-    //filtra todos os condições que tem o id diferente do que foi encontrado e gera um novo array
-    const itemFiltrado = estadiaFavorita.filter(like => like.id != procurarSalvo.id)
-    //transforma o array em string para poder salvar no LocalStorage
-    const itemFiltradoJSON = JSON.stringify(itemFiltrado)
-    //guarda esse novo array no localStorage
-    localStorage.getItem('favorito', itemFiltradoJSON)
-}
+});
 
