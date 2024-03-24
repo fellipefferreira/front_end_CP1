@@ -188,11 +188,6 @@ nav #perguntas-nav #hospedes-li svg{
   cursor:pointer;
 }
 
-
-
-
-
-
 /* conteudo geral */
 
 /* fotos do local */
@@ -280,8 +275,9 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 #localizacao h2 {
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
   font-size: 1.6rem;
+  font-weight: 550;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -292,7 +288,8 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 #info ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 510;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -304,11 +301,22 @@ nav #perguntas-nav #hospedes-li svg{
 #comentarios {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px 0;
 } 
 
+#comentarios #nota_4::after {
+  content: "•";
+  margin: 0 8px;
+} 
+
+#comentarios p{
+  font-weight: 520;
+  font-size: 1.1rem;
+  color: #000000;
+}
+
 #comentarios a{
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: underline;
   color: #000000;
 }
@@ -540,51 +548,47 @@ nav #perguntas-nav #hospedes-li svg{
 /* barra de rolagem */
 
 .quali_coment {
-  margin: 40px 0;
+  gap: 6px;
   display: flex;
   align-items: center;
 }
 
 .quali_coment svg{
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .quali_coment div strong{
-  margin: 0 4px;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .quali_coment #vai::after {
   content: '•';
-  margin: 0 5px;
+  margin: 0 8px;
 }
-
 
 .ro-ge{
-  margin: 40px 0;
+  margin: 2rem 0;
   display: grid;
-  padding: 10px;
-  grid-template-columns: repeat(10, minmax(240px, 1fr));;
-  overflow: auto;
+  padding: 0.5rem;
+  gap: 10px;
+  grid-template-columns: repeat(7, minmax(10%, auto));;
 }
 
-.role {
-  padding: 0px;
-  font-size: 1.4rem;
+.role img{
+  width: 10rem;
 }
 
 .role:not(:first-child){
-  padding: 0 1rem;
-  margin: 0 0.4rem;
+  padding: 0 0 0 1rem ;
   border-left: 1px solid #000;
 }
 
 .titulo_rolo {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .classi {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -634,6 +638,32 @@ nav #perguntas-nav #hospedes-li svg{
   color: rgb(146, 148, 148);
 }
 
+.mais_come button {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+.mais_come button:hover {
+  background-color: #dfdddd;
+}
+
+/* mapa */
+.map_titulo h3{rgb(212, 211, 211)
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.map iframe {
+  width: 100%;
+  height: 30rem;
+}
+
+.map_desc {
+  width: 60%;
+}
 /* sobre o anfitriao */
 
 #sobre_anfi {
@@ -662,11 +692,11 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .anfitri h3{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .anfitri p{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .ava_veri {
@@ -677,21 +707,21 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .ava_veri p, .text h3{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 535 ;
 }
 
 .icone_anfi {
-  height: 1.6rem;
+  height: 1.2rem;
 }
 
 .text p {
   margin: 10px 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .confitriao h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 20px 0;
 }
 
@@ -708,16 +738,16 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .confi p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .estadia-anfi h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin:  20px 0 10px 0;
 }
 
 .estadia-anfi p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin:  20px 0 10px 0;
 }
 
@@ -726,12 +756,12 @@ nav #perguntas-nav #hospedes-li svg{
 }
 .idiomas p {
   margin: 10px 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .idiomas button{
-  padding: 1.1rem;
-  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1.3rem;
   margin: 20px 0;
   background-color: #Fff;
   border-radius: 1.2rem;
@@ -745,19 +775,19 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .dado_paga p{
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #4c4b4b;
 }
 
 .icone_paga{
   fill: rgb(227, 28, 95);
   stroke: currentcolor;
-  width: 5rem;
+  width: 4rem;
 }
 
 /* o que deve saber */
 .sla h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: 20px 0;
 }
 
@@ -803,12 +833,13 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 footer{
-  margin: 3% ;
+  padding: 3% ;
+  background-color: #ece8e89c;
 }
 
 .locais_footer {
   display: grid;
-  grid-template-rows: 180px 180px;
+  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr ;
   margin: 30px 0 ;
   gap: 15px;
@@ -832,6 +863,46 @@ footer{
   text-decoration: underline;
 }
 
+/* rodape do rodape */
+.roda_roda{
+  display: flex;
+  justify-content: space-between;
+}
 
+.p1{
+  display: flex;
+  gap: 2px;
+}
+
+.p1 a{
+  color: #454444;
+}
+
+.p1 a:hover{
+  text-decoration: underline;
+}
+
+.p1 .itens::before{
+  content: '•';
+  margin: 0 8px;
+}
+
+.p2, .br, .dindin, .icone_footer_div {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+.icone-footer {
+  width: 1.4rem;
+  fill: currentcolor;
+}
+
+.icone-footer_2 {
+  display: flex;
+  width: 5rem;
+  gap: 10px;
+  fill: currentcolor;
+}
 
 
