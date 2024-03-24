@@ -135,7 +135,7 @@ nav #perguntas-nav #hospedes-li svg{
 #linha_horizontal{
   width:100%;
   border-color:rgba(0, 0, 0, 0.226);
-  margin-top:30px;
+  margin: 40px 0;
 }
 
 /* Sub-menu */
@@ -532,12 +532,64 @@ nav #perguntas-nav #hospedes-li svg{
   background-color: #e1dede;
 }
 
+/* barra de rolagem */
+
+.quali_coment {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+.quali_coment svg{
+  width: 2rem;
+}
+
+.quali_coment div strong{
+  margin: 0 4px;
+  font-size: 2.5rem;
+}
+
+.quali_coment #vai::after {
+  content: '•';
+  margin: 0 5px;
+}
+
+
+.ro-ge{
+  margin: 40px 0;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(10, minmax(240px, 1fr));;
+  overflow: auto;
+}
+
+.role {
+  padding: 0px;
+  font-size: 1.4rem;
+}
+
+.role:not(:first-child){
+  padding: 0 1rem;
+  margin: 0 0.4rem;
+  border-left: 1px solid #000;
+}
+
+.titulo_rolo {
+  font-size: 1.5rem;
+}
+
+.classi {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
 /* comentarios - opiniao */
 .avaliar {
   gap: 30px;
   margin:  40px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .info_people {
@@ -577,8 +629,126 @@ nav #perguntas-nav #hospedes-li svg{
   color: rgb(146, 148, 148);
 }
 
+/* sobre o anfitriao */
 
+#sobre_anfi {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr;
+  grid-template-rows:  auto;
+  grid-template-areas: 
+    'anfi anfi'
+    'g1 g2';
+    column-gap: 5rem;
+}
 
+.anfi{
+  grid-area: g1;
+}
+.anfitri{
+  grid-area: anfi;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.anfitri img{
+  height: 4.5rem;
+  border-radius: 100%;
+}
+
+.anfitri h3{
+  font-size: 1.8rem;
+}
+
+.anfitri p{
+  font-size: 1.2rem;
+}
+
+.ava_veri {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ava_veri p, .text h3{
+  font-size: 1.2rem;
+  font-weight: 535 ;
+}
+
+.icone_anfi {
+  height: 1.6rem;
+}
+
+.text p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.confitriao h3 {
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+
+.confi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.confi img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100%;
+}
+
+.confi p {
+  font-size: 1.2rem;
+}
+
+.estadia-anfi h3 {
+  font-size: 1.5rem;
+  margin:  20px 0 10px 0;
+}
+
+.estadia-anfi p {
+  font-size: 1.2rem;
+  margin:  20px 0 10px 0;
+}
+
+.idiomas {
+  grid-area: g2;
+}
+.idiomas p {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.idiomas button{
+  padding: 1.1rem;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  background-color: #Fff;
+  border-radius: 1.2rem;
+}
+
+.dado_paga{
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.dado_paga p{
+  font-size: 1.1rem;
+  color: #4c4b4b;
+}
+
+.icone_paga{
+  fill: rgb(227, 28, 95);
+  stroke: currentcolor;
+  width: 5rem;
+}
 
 footer {
   display: grid;
