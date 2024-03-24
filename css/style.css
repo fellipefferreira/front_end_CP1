@@ -217,12 +217,17 @@ nav #perguntas-nav #hospedes-li svg{
   display: flex;
   align-items: center;
   margin-left: 30px;
+  justify-content: space-between;
 }
+
+
+
 
 .box-title--btn a {
   margin-left: 0.4rem;
   font-size: 1rem;
   color: #222;
+  
 }
 
 .photos {
