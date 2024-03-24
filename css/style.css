@@ -14,7 +14,7 @@
   object-fit: cover;
 }
 
-body{
+.body{
   padding: 1% 5% 0 5%;
 }
 
@@ -755,15 +755,82 @@ nav #perguntas-nav #hospedes-li svg{
   width: 5rem;
 }
 
-footer {
+/* o que deve saber */
+.sla h3 {
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 2rem;
+}
+
+
+.titulo_saber{
+  font-size: 1.2rem;
+}
+
+.texto_saber{
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+#linha_horizontal_1{
+  width:100%;
+  margin-top: 40px;
+  border-color:rgba(0, 0, 0, 0.226);
+}
+
+#linha_horizontal_2{
+  width:100%;
+  border-color:rgba(0, 0, 0, 0.226);
+}
+#ratinho {
+  padding: 40px 5% ;
+  display: flex;
+  background-color: #ece8e89c;
+}
+#ratinho a{
+  color: #000;
+}
+
+#ratinho div:not(:last-child)::after{
+  content: ">";
+  margin:  4px;
+}
+
+footer{
+  margin: 3% ;
+}
+
+.locais_footer {
   display: grid;
   grid-template-rows: 180px 180px;
   grid-template-columns: 1fr 1fr 1fr ;
   margin: 30px 0 ;
-  gap: 10px;
-
+  gap: 15px;
 }
 
+.titulo_footer {
+  margin: 15px 0;
+  font-size: 1.3rem;
+}
+
+.texto_footer {
+  margin: 0.4rem 0;
+}
+
+.texto_footer a{
+  color: #2f2d2d;
+  font-size: 1.1rem;
+}
+
+.texto_footer a:hover{
+  text-decoration: underline;
+}
 
 
 
