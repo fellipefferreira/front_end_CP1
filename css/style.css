@@ -143,7 +143,7 @@ nav #perguntas-nav #hospedes-li svg{
 #linha_horizontal{
   width:100%;
   border-color:rgba(0, 0, 0, 0.226);
-  margin: 40px 0;
+  margin: 2rem 0;
 }
 
 /* Sub-menu */
@@ -220,8 +220,8 @@ nav #perguntas-nav #hospedes-li svg{
   margin-top: 1rem;
 }
 
-.box-title h1 {
-  font-size: 1.8rem;
+.box-title h1, .box-title span {
+  font-size: 1.6rem;
 }
 
 .box-title--btns {
@@ -233,12 +233,9 @@ nav #perguntas-nav #hospedes-li svg{
   /* Colocando o icone do lado do texto */
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  gap: 0.8rem;
   justify-content: space-between;
 }
-
-
-
 
 .box-title--btn a {
   margin-left: 0.4rem;
@@ -249,10 +246,10 @@ nav #perguntas-nav #hospedes-li svg{
 
 .photos {
   display: grid;
-  grid-template-rows: 180px 180px;
+  grid-template-rows: 12rem 12rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 20px 0 ;
-  gap: 10px;
+  margin: 1.5rem 0 ;
+  gap: 1rem;
 }
 
 .photos div {
@@ -305,7 +302,7 @@ nav #perguntas-nav #hospedes-li svg{
 
 #info ul {
   display: flex;
-  gap: 10px;
+  gap: 0.2rem;
   align-items: center;
 }
 
@@ -315,20 +312,20 @@ nav #perguntas-nav #hospedes-li svg{
   font-family: "Quicksand", sans-serif;
 }
 
-#info #lugar-hospedagem li:not(:last-child):after {
+#info #lugar-hospedagem li:not(:last-child)::after {
   content: '•';
-  margin: 0 4px;
+  margin: 0 0.5rem;
 }
 
 #comentarios {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 0.8rem 0;
 } 
 
 #comentarios #nota_4::after {
   content: "•";
-  margin: 0 8px;
+  margin: 0 0.5rem;
 } 
 
 #comentarios p{
@@ -356,6 +353,9 @@ nav #perguntas-nav #hospedes-li svg{
   width: 35%;
   height: 350px;
 
+
+  position: sticky;
+
   display: grid;
   grid-template-rows: repeat(4, 80px);
   grid-template-columns: 1fr 1fr;
@@ -377,7 +377,7 @@ nav #perguntas-nav #hospedes-li svg{
 .check-in, .check-out {
   width: 100%;
   grid-area: in;
-  margin-top: 15px;
+  margin-top: 1.4rem;
   border: 1px solid rgba(74, 75, 75, 0.567);
   font-size: 1.1rem;
   padding: 0.4rem;
@@ -429,9 +429,9 @@ nav #perguntas-nav #hospedes-li svg{
 /* Anfitrio*/
 
 #anfitriao {
-  margin: 30px 0;
+  margin: 2.4rem 0;
   display: flex;
-  gap: 10px;
+  gap: 1.8rem;
   align-items: center;
 }
 
@@ -454,16 +454,14 @@ nav #perguntas-nav #hospedes-li svg{
 /* qualidades do local */
 
 .qualidades {
-  margin: 40px 0;
-  
+  margin: 1rem 0;
 }
 
 .rows{  
   display: flex;
-  gap: 10px;
+  gap: 1.3rem;
   align-items: center;
-  margin: 15px 0 15px 5px;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .icons {
@@ -471,18 +469,18 @@ nav #perguntas-nav #hospedes-li svg{
 }
  
 .texto h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
 } 
 
 /* texto irritante */
 
 .textao{
-  margin: 40px 0;
+  margin: 3rem 0;
 }
 
 .titulo{
-  margin-top: 20px ;
+  margin: 1.5rem 0 ;
   font-size: 1.2rem;
   padding: 1rem;
   border-radius: 10px;
@@ -501,33 +499,32 @@ nav #perguntas-nav #hospedes-li svg{
 #muito_texto {
   font-size: 1.1rem;
   padding: 0.4rem;
-  margin: 10px 0;
+  margin: 0.8rem 0;
 }
 
 #mais_info {
   font-size: 1.2rem;
   text-decoration: underline;
-  margin: 15px 0;
+  margin: 1rem 0;
 }
 
 /* onde vai dormir */
 
 .dorminhoco {
-  margin: 40px 0;
+  margin: 2rem 0;
 }
 
 .dorminhoco h1 {
-  margin-top: 20px;
   font-size: 1.5rem;
   font-weight: 550;
-  margin: 20px 0;
+  margin: 1rem 0;
   font-weight: 520;
 }
 
 .dormir_img img{
-  height: 200px;
-  border-radius: 10px;
-  margin: 5px 0;
+  height: 15rem;
+  border-radius: 1rem;
+  margin: 1.4rem 0;
 }
 
 .dormir_texto h4 {
@@ -535,23 +532,22 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .dormir_texto p {
-  margin-bottom: 20px;
+  margin-bottom: 1.3rem;
 }
 
 /* oferece */
 
 .oferece_titulo h1 {
-  margin-top: 20px;
   font-size: 1.5rem;
-  margin: 20px 0;
+  margin: 1.3rem 0;
   font-weight: 520;
 }
 
 .oferece {
-  margin-top: 40px;
+  margin-top: 1.4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 15px;
+  gap: 1rem;
 }
 
 .rows{
@@ -559,14 +555,13 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .btn_oferecido button {
-  width: 350px;
-  margin-top: 15px;
+  width: 25rem;
+  margin: 1.3rem 0;
   border: 1px solid #000;
-  border-radius: 10px;
-  padding: 15px;
-  font-size: 1.2rem;
+  border-radius: 1.4rem;
+  padding: 1.6rem;
+  font-size: 1.3rem;
   background-color: #FFF;
-  margin-bottom: 20px ;
 }
 
 .btn_oferecido button:hover {
@@ -577,7 +572,7 @@ nav #perguntas-nav #hospedes-li svg{
 /* barra de rolagem */
 
 .quali_coment {
-  gap: 6px;
+  gap: 0.2rem;
   display: flex;
   align-items: center;
 }
@@ -592,14 +587,14 @@ nav #perguntas-nav #hospedes-li svg{
 
 .quali_coment #vai::after {
   content: '•';
-  margin: 0 8px;
+  margin: 0 0.8rem;
 }
 
 .ro-ge{
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: grid;
   padding: 0.5rem;
-  gap: 10px;
+  gap: 1rem;
   grid-template-columns: repeat(7, minmax(10%, auto));;
 }
 
@@ -624,22 +619,23 @@ nav #perguntas-nav #hospedes-li svg{
 
 /* comentarios - opiniao */
 .avaliar {
-  gap: 30px;
-  margin:  40px 0;
+  width: 100%;
+  gap: 2rem;
+  margin:  2rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .info_people {
   display: flex;
-  gap: 10px;
+  gap: 1.5rem;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
 }
 
 .info_people img {
-  height: 50px;
-  width: 50px;
+  height: 4rem;
+  width: 4rem;
   border-radius: 100%;
 }
 
@@ -711,7 +707,7 @@ nav #perguntas-nav #hospedes-li svg{
 .anfitri{
   grid-area: anfi;
   display: flex;
-  gap: 20px;
+  gap: 1.4rem;
   align-items: center;
 }
 
@@ -729,10 +725,10 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .ava_veri {
-  margin: 20px 0px;
+  margin: 1.4rem 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .ava_veri p, .text h3{
@@ -745,19 +741,19 @@ nav #perguntas-nav #hospedes-li svg{
 }
 
 .text p {
-  margin: 10px 0;
+  margin: 1rem 0;
   font-size: 0.9rem;
 }
 
 .confitriao h3 {
   font-size: 1.2rem;
-  margin: 20px 0;
+  margin: 1.4rem 0;
 }
 
 .confi {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .confi img {
@@ -772,26 +768,26 @@ nav #perguntas-nav #hospedes-li svg{
 
 .estadia-anfi h3 {
   font-size: 1.3rem;
-  margin:  20px 0 10px 0;
+  margin:  1rem 0;
 }
 
 .estadia-anfi p {
   font-size: 1rem;
-  margin:  20px 0 10px 0;
+  margin:  1rem 0;
 }
 
 .idiomas {
   grid-area: g2;
 }
 .idiomas p {
-  margin: 10px 0;
+  margin: 1rem 0;
   font-size: 1.2rem;
 }
 
 .idiomas button{
   padding: 1rem;
   font-size: 1.3rem;
-  margin: 20px 0;
+  margin: 1.3rem 0;
   background-color: #Fff;
   border-radius: 1.2rem;
 }
@@ -799,8 +795,8 @@ nav #perguntas-nav #hospedes-li svg{
 .dado_paga{
   align-items: center;
   display: flex;
-  margin: 20px 0;
-  gap: 10px;
+  margin: 1.3rem 0;
+  gap: 1rem;
 }
 
 .dado_paga p{
@@ -817,7 +813,7 @@ nav #perguntas-nav #hospedes-li svg{
 /* o que deve saber */
 .sla h3 {
   font-size: 1.5rem;
-  margin: 20px 0;
+  margin: 1.5rem 0;
 }
 
 .lista {
@@ -839,7 +835,7 @@ nav #perguntas-nav #hospedes-li svg{
 
 #linha_horizontal_1{
   width:100%;
-  margin-top: 40px;
+  margin-top: 2rem;
   border-color:rgba(0, 0, 0, 0.226);
 }
 
@@ -848,7 +844,7 @@ nav #perguntas-nav #hospedes-li svg{
   border-color:rgba(0, 0, 0, 0.226);
 }
 #ratinho {
-  padding: 40px 5% ;
+  padding: 2rem 5% ;
   display: flex;
   background-color: #ece8e89c;
 }
@@ -875,7 +871,7 @@ footer{
 }
 
 .titulo_footer {
-  margin: 15px 0;
+  margin: 1rem 0;
   font-size: 1.3rem;
 }
 
@@ -932,6 +928,10 @@ footer{
   width: 5rem;
   gap: 10px;
   fill: currentcolor;
+}
+
+.ver_mobile {
+  display: none;
 }
 
 @media screen and (min-width:745px) and (max-width:1125px ) {
@@ -992,5 +992,129 @@ footer{
     grid-area: links;
   }
 
+
+}
+
+@media screen and (max-width:745px) {
+  html {
+    font-size: 8px;
+  }
+
+  #linha_horizontal_3{
+    width:100%;
+    margin-top: 0;
+    border-color:rgba(0, 0, 0, 0.226);
+  }
+
+  .esconder_2 {
+    display: none;
+  }
+
+  .ver_mobile {
+    display: block;
+  }
+
+  .body{
+    padding: 1% 2% 0 2%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .geral {
+    width: 100%;
+  }
+   
+
+  header {
+    display: none;
+  }
+
+  .photos {
+    display: none;
+  }
+
+  .box-title {
+    gap: 10px ;
+  }
+
+  #card-preco {
+    display: none;
+  }
+
+  .avaliar {
+    width: 100%;
+    gap: 2rem;
+    margin:  2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .locais_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* anfitriao */
+
+  #sobre_anfi {
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+
+  /* qualidades */
+
+  .ro-ge{
+    margin: 2rem 0;
+    display: grid;
+    padding: 0.5rem;
+    gap: 1rem;
+    grid-template-columns: repeat(7, minmax(20%, auto));
+    overflow: scroll;
+  }
+  
+  /* anfitriao */
+
+  .idiomas {
+    display: none;
+  }
+
+  /* o que deve saber */
+
+  .lista {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+  }
+  
+
+  /* footer */
+  .roda_roda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    'br'
+    'direitos'
+    'links';
+  }
+
+  .p2 {
+    grid-area: br;
+  }
+
+  .direitos{ 
+    grid-area: direitos;
+    margin: 1rem 0;
+  }
+
+
+  .p1 {
+    grid-area: links;
+  }
+  .icone_footer_div{
+    display: none;
+  }
 
 }
