@@ -166,7 +166,7 @@ nav #perguntas-nav #hospedes-li svg{
   max-height: 500px;
   box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.25);
 }
-
+/* Coração */
 #imgHeart{
   position: relative;
   left:19px;
@@ -283,6 +283,99 @@ nav #perguntas-nav #hospedes-li svg{
 
 .photos .img5 img {
   border-bottom-right-radius: 15px;
+}
+
+/* Estilizando section do slider de imagens */
+.close{
+  position:absolute;
+  top:8px;
+  left:95%;
+  width:35px;
+  cursor:pointer;
+  transition:.3s;
+}
+.close.close-slider{
+  overflow:hidden;
+}
+.close:hover{
+  transition:.3s;
+  width:38px;
+}
+#container{
+  width:935px;
+  height:520px;
+  border-radius:20px;
+  overflow:hidden;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  display:none;
+ 
+}
+#container.open-slider{
+  max-height:600px;
+  box-shadow:0px 10px 1000px 800px rgba(230, 230, 230, 0.968);
+  display:block;
+}
+
+  
+
+.navigation{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar{
+  width:30px;
+  height:20px;
+  border:2px solid #FFF;
+  margin:6px;
+  border-radius:10%;
+  cursor:pointer;
+  transition: .5s;
+}
+.bar:hover{
+  background: #030303a1;
+  box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, 0.904);
+}
+input{
+  display:none;
+}
+.slides {
+  display:flex;
+  width:500%;
+  height:100%;
+
+}
+
+.slide{
+  width:20%;
+  transition: .8s;
+}
+
+.slide img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+#slide1:checked ~ .s1{
+  margin-left:0;
+}
+#slide2:checked ~ .s1{
+  margin-left:-20%;
+}
+#slide3:checked ~ .s1{
+  margin-left:-40%;
+}
+#slide4:checked ~ .s1{
+  margin-left:-60%;
+}
+#slide4:checked ~ .s1{
+  margin-left:-80%;
 }
 
 
