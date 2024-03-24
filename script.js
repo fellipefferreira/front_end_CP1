@@ -9,11 +9,21 @@ let heartSave = document.getElementById("imgHeart");
 toggleHeart = () => {
     heartSave.classList.toggle("openHeart")
 }
-
-// function changeIcon(){
-//     var img = document.getElementById("imgHeart")
-//     img.src = "./img/heart.png"
-// }
+//Função para abrir o slider de imagens
+let imageSlider = document.getElementById("container");
+toggleSlider = () => {
+    imageSlider.classList.toggle("open-slider")
+}
+//Função para fechar o slider de imagens
+let btn = document.querySelector(".close")
+let div = document.querySelector("#container")
+btn.addEventListener('click', () =>{
+    if(div.style.display === 'block'){
+        div.style.display = 'none';
+    }else{
+        div.style.display = 'none';
+    }
+})
 
 
 
