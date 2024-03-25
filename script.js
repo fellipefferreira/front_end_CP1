@@ -8,6 +8,7 @@ toggleMenu = () => {
 let heartSave = document.getElementById("imgHeart");
 toggleHeart = () => {
     heartSave.classList.toggle("openHeart")
+    heartSave.classList.toggle.add("esconder_cora")
 }
 //Função para abrir o slider de imagens
 let imageSlider = document.getElementById("container");

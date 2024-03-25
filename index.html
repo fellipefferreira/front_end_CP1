@@ -89,22 +89,28 @@
 
             <div class="box-title">
                 <h1 class="esconder_2">Domo Geodésico encantador no meio das montanhas !</h1>
-                <h1 class="ver_mobile"> <span> < </span> Acomodações</h1>
+                <div class="ver_mobile acomodacoes"> <span> < </span>  <h1>Acomodações</h1>
+                </div>
                 
                 <div class="box-title--btns">
 
                     <div class="box-title--btn">
-                        <!-- svg -> vetor -->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 2; overflow: visible;"><g fill="none"><path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9M16 3v23V3zM6 13l9.3-9.3a1 1 0 0 1 1.4 0L26 13"></path></g></svg>
-                        <a href="#" class="esconder_2">Compartilhar</a>
+                        <div id="compartilhar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"  ><g fill="none"><path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9M16 3v23V3zM6 13l9.3-9.3a1 1 0 0 1 1.4 0L26 13"></path></g></svg>
+                        </div>
+                        
+                        <p href="#" class="esconder_2">Compartilhar</p>
                     </div>
+
                     <div class="box-title--btn" id="btnSalvar" >
-                        <a href="#" id="salvar" onclick="toggleHeart()" >
-                            <img src="img/heart.png" id="imgHeart" width="15"> 
-                            <img src="img/heart-vazio.png" width="15" alt="">
+                        <a href="#">
+                            <div href="#" id="salvar" onclick="toggleHeart()" >
+                                <img src="img/heart.png"  id="imgHeart" > 
+                                <img src="img/heart-vazio.png"   alt="">
+                            </div>
+                            
                             <p class="esconder_2">Salvar</p>
                         </a>
-                     
                     </div>
                 </div>
             </div>
@@ -134,641 +140,730 @@
                 </div>
           
             </div>
-        </section>
-        <section class="image-slider">
-            
-            <div id="container">
-                <img src="img/x-button.png" class="close" alt="">
-                
-                <div class="slides">
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-                    <input type="radio" name="slide" id="slide4">
-                    <input type="radio" name="slide" id="slide5">
-                
-                    <div class="slide s1">
-                        <img src="img/foto-1_domo.webp" alt="">
+
+            <div class="container-slide ver_mobile">
+                <div class="slider_wrapper">
+
+                    <div class="slider">
+                        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/a0f8fbe3-3426-419b-8d95-fc27aa2bb558.jpeg?im_w=720" alt="" id="slide_1">
+                        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDU0MTY3OTE%3D/original/55a7982b-b984-4a16-9a9c-62f54ff56a25.jpeg?im_w=720" alt="" id="slide_2">
+                        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDU0MTY3OTE%3D/original/e9eb0ead-45fe-4926-93dc-910e100649fe.jpeg?im_w=720" alt="" id="slide_3">
+                        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDU0MTY3OTE%3D/original/449b988d-12ca-470e-87b9-3833fb80fcb7.jpeg?im_w=720" alt="" id="slide_4">
+                        <img src="https://a0.muscache.com/im/pictures/miso/Hosting-45416791/original/35fad900-251d-4a06-ab01-57b6dae61c3f.jpeg?im_w=720" alt="" id="slide_5">
                     </div>
-                    <div class="slide">
-                        <img src="img/foto-2.webp" alt="">
+
+                    <div class="slider-nav">
+                        <a href="#slider_1"></a>
+                        <a href="#slider_2"></a>
+                        <a href="#slider_3"></a>
+                        <a href="#slider_4"></a>
+                        <a href="#slider_5"></a>
                     </div>
-                    <div class="slide">
-                        <img src="img/foto-3.webp" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="img/foto-4.webp" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="img/foto-5.webp" alt="">
-                    </div>
-    
-                </div>
-    
-                <div class="navigation">
-                    <label class="bar" for="slide1"></label>
-                    <label class="bar" for="slide2"></label>
-                    <label class="bar" for="slide3"></label>
-                    <label class="bar" for="slide4"></label>
-                    <label class="bar" for="slide5"></label>
+
                 </div>
             </div>
-    
-    </section>
+        </section>
 
-
-        <main>
-            <section id="info">
+        <div class="body_mobile"> 
+            <section class="image-slider">
                 
-                <div class="geral">
+                <div id="container">
+                    <img src="img/x-button.png" class="close" alt="">
                     
-                    <div id="localizacao">
-                        <h2>Casa de cúpula em Monteiro Lobato, Brasil</h2>
-                    </div>
+                    <div class="slides">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+                        <input type="radio" name="slide" id="slide4">
+                        <input type="radio" name="slide" id="slide5">
                     
-                    <ul id="lugar-hospedagem">
-                        <li>2 hóspedes</li>
-                        <li>1 quarto</li>
-                        <li>1 cama</li>
-                        <li>1 banheiro</li>
-                    </ul>
-                    
-                    <ul id="comentarios">
-                        <li>
-                            <img src="./img/estrela.png" alt="menu" class="icones" >
-                        </li>
-                        
-                        <li>
-                            <p id="nota_4">4,7</p>
-                        </li>
-                        
-                        <li>
-                            <p>
-                                <a href="#">175 comentários</a>
-                            </p>
-                        </li>
-                    </ul>
-
-                    <hr id="linha_horizontal">
-
-                    <div id="anfitriao">
-                        <div>
-                            <img src="https://a0.muscache.com/im/pictures/user/2dd3a449-0009-43e7-af7f-ab57e4ba25c5.jpg?im_w=240" alt="IMAGEM DO ANFITRIAO" srcset="">
+                        <div class="slide s1">
+                            <img src="img/foto-1_domo.webp" alt="">
                         </div>
-                        
-                        <div class="dados">
-
-                            <h3>Anfitriã(o): Alexandre</h3>
-
-                            <p><span>Superhost</span> <span>7 anos hospedando</span></p>
+                        <div class="slide">
+                            <img src="img/foto-2.webp" alt="">
                         </div>
+                        <div class="slide">
+                            <img src="img/foto-3.webp" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/foto-4.webp" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="img/foto-5.webp" alt="">
+                        </div>
+        
                     </div>
-                
-                    <hr id="linha_horizontal">
-
-                    <div class="qualidades">
-                    
-                        <div class="rows">
-
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path d="M26 2a1 1 0 0 1 .92.61l.04.12 2 7a1 1 0 0 1-.85 1.26L28 11h-3v5h6v2h-2v13h-2v-2.54a3.98 3.98 0 0 1-1.73.53L25 29H7a3.98 3.98 0 0 1-2-.54V31H3V18H1v-2h5v-4a1 1 0 0 1 .88-1h.36L6.09 8.4l1.82-.8L9.43 11H12a1 1 0 0 1 1 .88V16h10v-5h-3a1 1 0 0 1-.99-1.16l.03-.11 2-7a1 1 0 0 1 .84-.72L22 2h4zm1 16H5v7a2 2 0 0 0 1.7 1.98l.15.01L7 27h18a2 2 0 0 0 2-1.85V18zm-16-5H8v3h3v-3zm14.24-9h-2.49l-1.43 5h5.35l-1.43-5z"></path></svg>
-                            </div>
-                            
-                            <div class="texto">
-                                <h3>Ótimo para trabalhar remotamente</h3>
-                                <p>Wi-Fi rápido com velocidade de 50 Mbps e um espaço adequado para trabalhar em uma área comum.</p>
-                            </div>
-                        </div>
-
-                        <div class="rows">
-
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32""><path d="M24.33 1.67a2 2 0 0 1 2 1.85v24.81h3v2H2.67v-2h3V3.67a2 2 0 0 1 1.85-2h.15zm-4 2H7.67v24.66h12.66zm4 0h-2v24.66h2zm-7 11a1.33 1.33 0 1 1 0 2.66 1.33 1.33 0 0 1 0-2.66z"></path></svg>
-                            </div>
-                            
-                            <div class="texto">
-                                <h3>Self check-in</h3>
-                                <p>Você pode fazer check-in com os funcionários do prédio.</p>
-                            </div>
-                        </div>
-
-                        <div class="rows">
-
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 17a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM25.67.33a2 2 0 0 1 2 1.85v6.54a2 2 0 0 1-.97 1.7l-.14.08-9.67 4.84a2 2 0 0 1-1.61.07l-.17-.07-9.67-4.84a2 2 0 0 1-1.1-1.62V2.33a2 2 0 0 1 1.84-2h.15zm0 2H6.33v6.39L16 13.55l9.67-4.83z"></path></svg>
-                            </div>
-                            
-                            <div class="texto">
-                                <h3>Alexandre é um Superhost</h3>
-                                <p>Superhosts são anfitriões experientes, com ótimas avaliações.</p>
-                            </div>
-                        </div>
-                    
+        
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
                     </div>
-
-                    <hr id="linha_horizontal">
-
-                    <div class="textao">
-                        <div class="titulo">
-                            Algumas informações foram traduzidas automaticamente. <a href="#">Exibir original</a>
-                        </div>
-                        
-                        <div id="muito_texto">
-                            Bem vindos ao @clubedomato, um sítio com mais de 120 mil metros em que você vai ter uma experiência total de conexão com a natureza. <br><br>
-                            Escolhemos o ponto com uma das melhores vistas do sítio para construir um domo geodésico todo de madeira. Ele tem um painel todo de vidro, logo em frente a cama. Imagine ver as estrelas a noite e acordar com o nascer do sol (fornecemos máscaras...
-                        </div>
-                        <div id="mais_info"> Mostrar mais </div>
-
-
-                    </div>
-
-                    <hr id="linha_horizontal">
-
-                    <div class="dorminhoco">
-
-                        <h1>Onde você vai dormir</h1>
-
-                        <div class="dormir_img"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDU0MTY3OTE%3D/original/55a7982b-b984-4a16-9a9c-62f54ff56a25.jpeg?im_w=720" alt=""></div>
-                        <div class="dormir_texto">
-                            <h4>Quarto</h4>
-                            <p>1 cama queen</p>
-                        </div>
-                    </div>
-                    
-                    <hr id="linha_horizontal">
-
-                    <div  class="oferece_titulo">
-                        <h1>O que esse lugar oferece</h1>
-                    </div>
-
-                    <div class="oferece">
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28 2a2 2 0 0 1 2 1.85V28a2 2 0 0 1-1.85 2H4a2 2 0 0 1-2-1.85V4a2 2 0 0 1 1.85-2H4zm-5.92 20H9.92L4 27.91V28h24v-.09zM28 4H4v21.08l12-12 12 12zM16 15.91 11.91 20h8.17zM22 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
-                            </div>
-                            <div class="texto"> Vista para as montanhas</div>
-                        </div>
-
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path d="M28 2a2 2 0 0 1 2 1.85V28a2 2 0 0 1-1.85 2H4a2 2 0 0 1-2-1.85V4a2 2 0 0 1 1.85-2H4zm-5.92 20H9.92L4 27.91V28h24v-.09zM28 4H4v21.08l12-12 12 12zM16 15.91 11.91 20h8.17zM22 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
-                            </div>
-
-                            <div class="texto">Vista para o vale</div>
-                        </div>
-
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28 2a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2H4v15.5h.19c.37-.04.72-.17 1-.38l.14-.11A3.98 3.98 0 0 1 8 18c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.97 3.97 0 0 1 16 18c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.98 3.98 0 0 1 24 18c.99 0 1.94.35 2.67 1 .35.33.83.5 1.33.5v2h-.23a3.96 3.96 0 0 1-2.44-1A1.98 1.98 0 0 0 24 20c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 16 20c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 8 20c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1v3h.19c.37-.04.72-.17 1-.38l.14-.11A3.98 3.98 0 0 1 8 23c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.97 3.97 0 0 1 16 23c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.98 3.98 0 0 1 24 23c.99 0 1.94.35 2.67 1 .35.33.83.5 1.33.5v2h-.23a3.96 3.96 0 0 1-2.44-1A1.98 1.98 0 0 0 24 25c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 16 25c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 8 25c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1V28h24zm-6 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
-                            </div>
-
-                            <div class="texto">Acesso ao lago</div>
-                        </div>
-
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 20.33a3.67 3.67 0 1 1 0 7.34 3.67 3.67 0 0 1 0-7.34zm0 2a1.67 1.67 0 1 0 0 3.34 1.67 1.67 0 0 0 0-3.34zM16 15a9 9 0 0 1 8.04 4.96l-1.51 1.51a7 7 0 0 0-13.06 0l-1.51-1.51A9 9 0 0 1 16 15zm0-5.33c4.98 0 9.37 2.54 11.94 6.4l-1.45 1.44a12.33 12.33 0 0 0-20.98 0l-1.45-1.45A14.32 14.32 0 0 1 16 9.66zm0-5.34c6.45 0 12.18 3.1 15.76 7.9l-1.43 1.44a17.64 17.64 0 0 0-28.66 0L.24 12.24c3.58-4.8 9.3-7.9 15.76-7.9z"></path></svg>
-                            </div>
-
-                            <div class="texto">Wi-Fi rápido (50 Mbps)</div>
-                        </div>
-
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path d="M26 2a1 1 0 0 1 .92.61l.04.12 2 7a1 1 0 0 1-.85 1.26L28 11h-3v5h6v2h-2v13h-2v-2.54a3.98 3.98 0 0 1-1.73.53L25 29H7a3.98 3.98 0 0 1-2-.54V31H3V18H1v-2h5v-4a1 1 0 0 1 .88-1h.36L6.09 8.4l1.82-.8L9.43 11H12a1 1 0 0 1 1 .88V16h10v-5h-3a1 1 0 0 1-.99-1.16l.03-.11 2-7a1 1 0 0 1 .84-.72L22 2h4zm1 16H5v7a2 2 0 0 0 1.7 1.98l.15.01L7 27h18a2 2 0 0 0 2-1.85V18zm-16-5H8v3h3v-3zm14.24-9h-2.49l-1.43 5h5.35l-1.43-5z"></path></svg>
-                            </div>
-
-                            <div class="texto">Espaço de trabalho exclusivo</div>
-                        </div>
-                        
-                        <div class="rows" id="esconder">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26 19a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm20.7-5 .41 1.12A4.97 4.97 0 0 1 30 18v9a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2H8v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9c0-1.57.75-2.96 1.89-3.88L4.3 13H2v-2h3v.15L6.82 6.3A2 2 0 0 1 8.69 5h14.62c.83 0 1.58.52 1.87 1.3L27 11.15V11h3v2h-2.3zM6 25H4v2h2v-2zm22 0h-2v2h2v-2zm0-2v-5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v5h24zm-3-10h.56L23.3 7H8.69l-2.25 6H25zm-15 7h12v-2H10v2z"></path></svg>
-                            </div>
-
-                            <div class="texto">Estacionamento incluído</div>
-                        </div>
-                        
-                        <div class="rows" id="esconder">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M9.5 2a4.5 4.5 0 0 1 3.53 7.3c.6.21 1.17.54 1.66.98l.19.19L17.4 13H31v2h-2v14a2 2 0 0 1-1.85 2H5a2 2 0 0 1-2-1.85V15H1v-2h2.1a5 5 0 0 1 2.96-3.6A4.5 4.5 0 0 1 9.5 2zm7.08 13H5v14h22V15h-7.59l3.3 3.3-1.42 1.4zM9.5 4a2.5 2.5 0 0 0-1 4.8V11H8a3 3 0 0 0-2.83 2h9.41l-1.12-1.12a3 3 0 0 0-1.92-.87l-.2-.01h-.84V8.8a2.5 2.5 0 0 0-1-4.8zm15.49-3a6.96 6.96 0 0 1-1.8 4.07l-.45.46A8.97 8.97 0 0 0 20.35 11h-2a10.97 10.97 0 0 1 3.2-7.12A4.96 4.96 0 0 0 22.97 1zm2 0h2a10.96 10.96 0 0 1-3.2 7.12A4.97 4.97 0 0 0 24.38 11h-2a6.97 6.97 0 0 1 1.8-4.06l.44-.47A8.96 8.96 0 0 0 26.99 1z"></path></svg>
-                            </div>
-
-                            <div class="texto">Jacuzzi privativa: disponível o ano todo, disponível 24 horas</div>
-                        </div>
-                    
-                        <div class="rows" id="esconder">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M17 1v4.03l4.03-2.32 1 1.73L17 7.34v6.93l6-3.47V5h2v4.65l3.49-2.02 1 1.74L26 11.38l4.03 2.33-1 1.73-5.03-2.9L18 16l6 3.46 5.03-2.9 1 1.73L26 20.62l3.49 2.01-1 1.74L25 22.35V27h-2v-5.8l-6-3.47v6.93l5.03 2.9-1 1.73L17 26.97V31h-2v-4.03l-4.03 2.32-1-1.73 5.03-2.9v-6.93L9 21.2V27H7v-4.65l-3.49 2.02-1-1.74L6 20.62l-4.03-2.33 1-1.73L8 19.46 14 16l-6-3.46-5.03 2.9-1-1.73L6 11.38 2.51 9.37l1-1.74L7 9.65V5h2v5.8l6 3.47V7.34l-5.03-2.9 1-1.73L15 5.03V1z"></path></svg>
-                            </div>
-
-                            <div class="texto">Ar-condicionado split</div>
-                        </div>
-
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M2.05 6.3 4 8.23V25a3 3 0 0 0 2.82 3h16.94l1.95 1.95c-.16.02-.33.04-.5.04L25 30H7a5 5 0 0 1-5-4.78V7c0-.24.02-.48.05-.7zm1.66-4 26 26-1.42 1.4-26-26 1.42-1.4zM25 2a5 5 0 0 1 5 4.78V25a5 5 0 0 1-.05.7L28 23.77V7a3 3 0 0 0-2.82-3H8.24L6.3 2.05c.16-.02.33-.04.5-.04L7 2h18zM11.1 17a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
-                            </div>
-
-                            <div class="texto"> <s>Alarme de monóxido de carbono</s> </div>
-                        </div>
-
-                        <div class="rows">
-                            <div class="icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m3.49 7.73 1.44 1.44A12.94 12.94 0 0 0 3 16a13 13 0 0 0 19.82 11.07l1.45 1.44A14.93 14.93 0 0 1 16 31 15 15 0 0 1 3.49 7.73zm.22-5.44 26 26-1.42 1.42-26-26 1.42-1.42zM16 1a15 15 0 0 1 12.52 23.27l-1.45-1.45A12.94 12.94 0 0 0 29 16 13 13 0 0 0 16 3a12.94 12.94 0 0 0-6.83 1.93L7.74 3.5A14.93 14.93 0 0 1 16 1zm-4.9 16a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
-                            </div>
-
-                            <div class="texto"><s>Detector de fumaça</s></div>
-                        </div>
-                        
-                        <div class="btn_oferecido">
-                            <button type="button">Mostrar todas as 36 comodidades</button>
-                        </div>
-                    </div>
-
                 </div>
-                    
-                <section id="card-preco">
-                    
-                    <div id="preco-titulo">
-                        Adicione datas para ver os preços
-                    </div>
-
-                    
-                    <div class="check-in"> <strong>Check-in</strong>
-                        <p>Adicione uma data</p>
-                    </div>
-
-                    <div class="check-out"> <strong>Check-out</strong>
-                        <p>Adicione uma data</p>
-                    </div>                    
-                    
-                    
-                        <div id="pessoas">  <strong>Hóspedes</strong>
-                            <p>Quantas pessoas ?</p>
-                        </div>
-
-                    <div id="comprar">
-                        <button id="botao"> Conferir disponibilidade</button>
-                    </div>
-
-                </section>
         
             </section>
 
-            <hr id="linha_horizontal">
 
-            <section>
-
-                <div class="quali_coment">
-                        <div class="quali_coment_svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                        </div>
-                        <div>
-                            <strong id="vai">4,97</strong>
-                        </div>
-                        <div>
-                            <strong> 175 comentários</strong>
-                        </div>
-                    </div>
-
-                <div class="ro-ge">
-
+            <main>
+                <section id="info">
                     
-                    <div class="role">
-                        <div>
-                            <img src="./img/barra de satisfacao.png" alt="foto da satisfacao dos comentarios">
-                        </div>
-                    </div>
-
-                    <div class="role">
-                        <div class="titulo_rolo">Limpeza</div>
-                        <div class="classi">4,9</div>
-                        <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M24 0v6h-4.3c.13 1.4.67 2.72 1.52 3.78l.2.22-1.5 1.33a9.05 9.05 0 0 1-2.2-5.08c-.83.38-1.32 1.14-1.38 2.2v4.46l4.14 4.02a5 5 0 0 1 1.5 3.09l.01.25.01.25v8.63a3 3 0 0 1-2.64 2.98l-.18.01-.21.01-12-.13A3 3 0 0 1 4 29.2L4 29.02v-8.3a5 5 0 0 1 1.38-3.45l.19-.18L10 12.9V8.85l-4.01-3.4.02-.7A5 5 0 0 1 10.78 0H11zm-5.03 25.69a8.98 8.98 0 0 1-6.13-2.41l-.23-.23A6.97 6.97 0 0 0 6 21.2v7.82c0 .51.38.93.87 1H7l11.96.13h.13a1 1 0 0 0 .91-.88l.01-.12v-3.52c-.34.04-.69.06-1.03.06zM17.67 2H11a3 3 0 0 0-2.92 2.3l-.04.18-.01.08 3.67 3.1h2.72l.02-.1a4.29 4.29 0 0 1 3.23-3.4zM30 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-3-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 0h-2.33v2H22zm8-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM20 20.52a3 3 0 0 0-.77-2l-.14-.15-4.76-4.61v-4.1H12v4.1l-5.06 4.78a3 3 0 0 0-.45.53 9.03 9.03 0 0 1 7.3 2.34l.23.23A6.98 6.98 0 0 0 20 23.6z"></path></svg>
-                        </div>
-                    </div>
-
-                    <div class="role">
-                        <div class="titulo_rolo">Exatidão do anúncio</div>
-                        <div class="classi">5,0</div>
-                        <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 1a15 15 0 1 1 0 30 15 15 0 0 1 0-30zm0 2a13 13 0 1 0 0 26 13 13 0 0 0 0-26zm7 7.59L24.41 12 13.5 22.91 7.59 17 9 15.59l4.5 4.5z"></path></svg>
-                        </div>
-                    </div>
-
-                    <div class="role">
-                        <div class="titulo_rolo">Check-in</div>
-                        <div class="classi">5,0</div>
-                        <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.84 27.16v-3.4l-.26.09c-.98.32-2.03.51-3.11.55h-.7A11.34 11.34 0 0 1 1.72 13.36v-.59A11.34 11.34 0 0 1 12.77 1.72h.59c6.03.16 10.89 5.02 11.04 11.05V13.45a11.3 11.3 0 0 1-.9 4.04l-.13.3 7.91 7.9v5.6H25.7l-4.13-4.13zM10.31 7.22a3.1 3.1 0 1 1 0 6.19 3.1 3.1 0 0 1 0-6.2zm0 2.06a1.03 1.03 0 1 0 0 2.06 1.03 1.03 0 0 0 0-2.06zM22.43 25.1l4.12 4.13h2.67v-2.67l-8.37-8.37.37-.68.16-.3c.56-1.15.9-2.42.96-3.77v-.64a9.28 9.28 0 0 0-9-9h-.55a9.28 9.28 0 0 0-9 9v.54a9.28 9.28 0 0 0 13.3 8.1l.3-.16 1.52-.8v4.62z"></path></svg>
-                        </div>
-                    </div>
-
-                    <div class="role">
-                        <div class="titulo_rolo">Comunicação</div>
-                        <div class="classi">5,0</div>
-                        <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.95 3.81a2 2 0 0 0-2.38-1.52l-7.58 1.69-10-2-8.42 1.87A1.99 1.99 0 0 0 1 5.8v21.95a1.96 1.96 0 0 0 .05.44 2 2 0 0 0 2.38 1.52l7.58-1.69 10 2 8.42-1.87A1.99 1.99 0 0 0 31 26.2V4.25a1.99 1.99 0 0 0-.05-.44zM12 4.22l8 1.6v21.96l-8-1.6zM3 27.75V5.8l-.22-.97.22.97 7-1.55V26.2zm26-1.55-7 1.55V5.8l7-1.55z"></path></svg>
-                        </div>
-                    </div>
-
-                    <div class="role">
-                        <div class="titulo_rolo">Localização</div>
-                        <div class="classi">4,8</div>
-                        <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.95 3.81a2 2 0 0 0-2.38-1.52l-7.58 1.69-10-2-8.42 1.87A1.99 1.99 0 0 0 1 5.8v21.95a1.96 1.96 0 0 0 .05.44 2 2 0 0 0 2.38 1.52l7.58-1.69 10 2 8.42-1.87A1.99 1.99 0 0 0 31 26.2V4.25a1.99 1.99 0 0 0-.05-.44zM12 4.22l8 1.6v21.96l-8-1.6zM3 27.75V5.8l-.22-.97.22.97 7-1.55V26.2zm26-1.55-7 1.55V5.8l7-1.55z"></path></svg>
-                        </div>
-                    </div>
-
-                    <div class="role">
-                        <div class="titulo_rolo">Custo-benefício</div>
-                        <div class="classi">4,7</div>
-                        <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.17 2a3 3 0 0 1 1.98.74l.14.14 11 11a3 3 0 0 1 .14 4.1l-.14.14L18.12 29.3a3 3 0 0 1-4.1.14l-.14-.14-11-11A3 3 0 0 1 2 16.37l-.01-.2V5a3 3 0 0 1 2.82-3h11.35zm0 2H5a1 1 0 0 0-1 .88v11.29a1 1 0 0 0 .2.61l.1.1 11 11a1 1 0 0 0 1.31.08l.1-.08L27.88 16.7a1 1 0 0 0 .08-1.32l-.08-.1-11-11a1 1 0 0 0-.58-.28L16.17 4zM9 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <hr id="linha_horizontal">
-
-            <section>
-
-                <div class="avaliar">
-
-                    <div class="comentarios_geral">
+                    <div class="geral">
                         
-                        <div class="info_people">
-                            <div><img src="https://a0.muscache.com/im/pictures/user/8d0b0d2e-f6c3-45b3-bb39-28b4b306c105.jpg?im_w=240" alt=""></div>
-                            <div>
-                                <h3>Deise</h3>
-                                <p>São Paulo, Brasil</p> 
-                            </div>
+                        <div id="localizacao">
+                            <h2>Casa de cúpula em Monteiro Lobato, Brasil</h2>
                         </div>
+                        
+                        <ul id="lugar-hospedagem">
+                            <li>2 hóspedes</li>
+                            <li>1 quarto</li>
+                            <li>1 cama</li>
+                            <li>1 banheiro</li>
+                        </ul>
+                        
+                        <ul id="comentarios">
+                            <li>
+                                <img src="./img/estrela.png" alt="menu" class="icones" >
+                            </li>
+                            
+                            <li>
+                                <p id="nota_4">4,7</p>
+                            </li>
+                            
+                            <li>
+                                <p>
+                                    <a href="#">175 comentários</a>
+                                </p>
+                            </li>
+                        </ul>
 
-                        <div class="conteudo">
-                            <div class="classificacao"> 
-                                <div class="estrela">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                </div>
+                        <hr id="linha_horizontal">
 
-                                <div class="data">fevereiro de 2024</div>
-                                
-                                <div class="estadia">Ficou uma noite</div>
+                        <section class="ver_mobile estiqueta">
+                            <div id="estiqueta">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g stroke="none">
+                                        <path d="M24.556 8H9a1 1 0 0 0-.993.883L8 9v15.556a1 1 0 0 0 .206.608l.087.1 17.213 17.213a1 1 0 0 0 1.32.083l.094-.083L42.477 26.92a1 1 0 0 0 .083-1.32l-.083-.094L25.263 8.293a1 1 0 0 0-.575-.284L24.556 8z" fill-opacity=".2"></path>
+                                        <path d="M24.556 4A5 5 0 0 1 27.9 5.282l.192.182 17.213 17.214a5 5 0 0 1 .172 6.89l-.172.18L29.75 45.306a5 5 0 0 1-6.89.172l-.181-.172L5.464 28.092a5 5 0 0 1-1.457-3.271L4 24.556V9a5 5 0 0 1 4.783-4.995L9 4h15.556zm0 2H9a3 3 0 0 0-2.995 2.824L6 9v15.556a3 3 0 0 0 .743 1.977l.136.145L24.092 43.89a3 3 0 0 0 4.099.135l.144-.135L43.89 28.335a3 3 0 0 0 .135-4.1l-.135-.143L26.678 6.879a3 3 0 0 0-1.924-.872L24.556 6zM13 10a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h1>Preço mais baixo</h1>
+                                <p>O preço por noite para as datas que você selecionou está R$1.115 mais baixo em comparação com a média dos últimos 60 dias.</p>
+                            </div>
+                        </section>
+                        
+                        <hr id="linha_horizontal">
+
+                        <div id="anfitriao">
+                            <div>
+                                <img src="https://a0.muscache.com/im/pictures/user/2dd3a449-0009-43e7-af7f-ab57e4ba25c5.jpg?im_w=240" alt="IMAGEM DO ANFITRIAO" srcset="">
                             </div>
                             
-                            <p>Um lugar incrível, vc se sente dentro da natureza, acordei às 5:30 pra ver o nascer do sol ao som de pássaros e maritacas...</p>
+                            <div class="dados">
+
+                                <h3>Anfitriã(o): Alexandre</h3>
+
+                                <p><span>Superhost</span> <span>7 anos hospedando</span></p>
+                            </div>
+                        </div>
+                    
+                        <hr id="linha_horizontal">
+
+                        <div class="qualidades">
+                        
+                            <div class="rows">
+
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path d="M26 2a1 1 0 0 1 .92.61l.04.12 2 7a1 1 0 0 1-.85 1.26L28 11h-3v5h6v2h-2v13h-2v-2.54a3.98 3.98 0 0 1-1.73.53L25 29H7a3.98 3.98 0 0 1-2-.54V31H3V18H1v-2h5v-4a1 1 0 0 1 .88-1h.36L6.09 8.4l1.82-.8L9.43 11H12a1 1 0 0 1 1 .88V16h10v-5h-3a1 1 0 0 1-.99-1.16l.03-.11 2-7a1 1 0 0 1 .84-.72L22 2h4zm1 16H5v7a2 2 0 0 0 1.7 1.98l.15.01L7 27h18a2 2 0 0 0 2-1.85V18zm-16-5H8v3h3v-3zm14.24-9h-2.49l-1.43 5h5.35l-1.43-5z"></path></svg>
+                                </div>
+                                
+                                <div class="texto">
+                                    <h3>Ótimo para trabalhar remotamente</h3>
+                                    <p>Wi-Fi rápido com velocidade de 50 Mbps e um espaço adequado para trabalhar em uma área comum.</p>
+                                </div>
+                            </div>
+
+                            <div class="rows">
+
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32""><path d="M24.33 1.67a2 2 0 0 1 2 1.85v24.81h3v2H2.67v-2h3V3.67a2 2 0 0 1 1.85-2h.15zm-4 2H7.67v24.66h12.66zm4 0h-2v24.66h2zm-7 11a1.33 1.33 0 1 1 0 2.66 1.33 1.33 0 0 1 0-2.66z"></path></svg>
+                                </div>
+                                
+                                <div class="texto">
+                                    <h3>Self check-in</h3>
+                                    <p>Você pode fazer check-in com os funcionários do prédio.</p>
+                                </div>
+                            </div>
+
+                            <div class="rows">
+
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;"><path d="M16 17a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM25.67.33a2 2 0 0 1 2 1.85v6.54a2 2 0 0 1-.97 1.7l-.14.08-9.67 4.84a2 2 0 0 1-1.61.07l-.17-.07-9.67-4.84a2 2 0 0 1-1.1-1.62V2.33a2 2 0 0 1 1.84-2h.15zm0 2H6.33v6.39L16 13.55l9.67-4.83z"></path></svg>
+                                </div>
+                                
+                                <div class="texto">
+                                    <h3>Alexandre é um Superhost</h3>
+                                    <p>Superhosts são anfitriões experientes, com ótimas avaliações.</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <hr id="linha_horizontal">
+
+                        <div class="textao">
+                            <div class="titulo">
+                                Algumas informações foram traduzidas automaticamente. <a href="#">Exibir original</a>
+                            </div>
+                            
+                            <div id="muito_texto">
+                                Bem vindos ao @clubedomato, um sítio com mais de 120 mil metros em que você vai ter uma experiência total de conexão com a natureza. <br><br>
+                                Escolhemos o ponto com uma das melhores vistas do sítio para construir um domo geodésico todo de madeira. Ele tem um painel todo de vidro, logo em frente a cama. Imagine ver as estrelas a noite e acordar com o nascer do sol (fornecemos máscaras...
+                            </div>
+                            <div id="mais_info"> Mostrar mais </div>
+
+
+                        </div>
+
+                        <hr id="linha_horizontal">
+
+                        <div class="dorminhoco">
+
+                            <h1>Onde você vai dormir</h1>
+
+                            <div class="dormir_img"><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDU0MTY3OTE%3D/original/55a7982b-b984-4a16-9a9c-62f54ff56a25.jpeg?im_w=720" alt=""></div>
+                            <div class="dormir_texto">
+                                <h4>Quarto</h4>
+                                <p>1 cama queen</p>
+                            </div>
+                        </div>
+                        
+                        <hr id="linha_horizontal">
+
+                        <div  class="oferece_titulo">
+                            <h1>O que esse lugar oferece</h1>
+                        </div>
+
+                        <div class="oferece">
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28 2a2 2 0 0 1 2 1.85V28a2 2 0 0 1-1.85 2H4a2 2 0 0 1-2-1.85V4a2 2 0 0 1 1.85-2H4zm-5.92 20H9.92L4 27.91V28h24v-.09zM28 4H4v21.08l12-12 12 12zM16 15.91 11.91 20h8.17zM22 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                                </div>
+                                <div class="texto"> Vista para as montanhas</div>
+                            </div>
+
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path d="M28 2a2 2 0 0 1 2 1.85V28a2 2 0 0 1-1.85 2H4a2 2 0 0 1-2-1.85V4a2 2 0 0 1 1.85-2H4zm-5.92 20H9.92L4 27.91V28h24v-.09zM28 4H4v21.08l12-12 12 12zM16 15.91 11.91 20h8.17zM22 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                                </div>
+
+                                <div class="texto">Vista para o vale</div>
+                            </div>
+
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M28 2a2 2 0 0 1 2 2v24a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2H4v15.5h.19c.37-.04.72-.17 1-.38l.14-.11A3.98 3.98 0 0 1 8 18c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.97 3.97 0 0 1 16 18c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.98 3.98 0 0 1 24 18c.99 0 1.94.35 2.67 1 .35.33.83.5 1.33.5v2h-.23a3.96 3.96 0 0 1-2.44-1A1.98 1.98 0 0 0 24 20c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 16 20c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 8 20c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1v3h.19c.37-.04.72-.17 1-.38l.14-.11A3.98 3.98 0 0 1 8 23c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.97 3.97 0 0 1 16 23c.99 0 1.95.35 2.67 1 .35.33.83.5 1.33.5.5 0 .98-.17 1.33-.5A3.98 3.98 0 0 1 24 23c.99 0 1.94.35 2.67 1 .35.33.83.5 1.33.5v2h-.23a3.96 3.96 0 0 1-2.44-1A1.98 1.98 0 0 0 24 25c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 16 25c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1 3.98 3.98 0 0 1-2.67-1A1.98 1.98 0 0 0 8 25c-.5 0-.98.17-1.33.5a3.98 3.98 0 0 1-2.67 1V28h24zm-6 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                                </div>
+
+                                <div class="texto">Acesso ao lago</div>
+                            </div>
+
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 20.33a3.67 3.67 0 1 1 0 7.34 3.67 3.67 0 0 1 0-7.34zm0 2a1.67 1.67 0 1 0 0 3.34 1.67 1.67 0 0 0 0-3.34zM16 15a9 9 0 0 1 8.04 4.96l-1.51 1.51a7 7 0 0 0-13.06 0l-1.51-1.51A9 9 0 0 1 16 15zm0-5.33c4.98 0 9.37 2.54 11.94 6.4l-1.45 1.44a12.33 12.33 0 0 0-20.98 0l-1.45-1.45A14.32 14.32 0 0 1 16 9.66zm0-5.34c6.45 0 12.18 3.1 15.76 7.9l-1.43 1.44a17.64 17.64 0 0 0-28.66 0L.24 12.24c3.58-4.8 9.3-7.9 15.76-7.9z"></path></svg>
+                                </div>
+
+                                <div class="texto">Wi-Fi rápido (50 Mbps)</div>
+                            </div>
+
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path d="M26 2a1 1 0 0 1 .92.61l.04.12 2 7a1 1 0 0 1-.85 1.26L28 11h-3v5h6v2h-2v13h-2v-2.54a3.98 3.98 0 0 1-1.73.53L25 29H7a3.98 3.98 0 0 1-2-.54V31H3V18H1v-2h5v-4a1 1 0 0 1 .88-1h.36L6.09 8.4l1.82-.8L9.43 11H12a1 1 0 0 1 1 .88V16h10v-5h-3a1 1 0 0 1-.99-1.16l.03-.11 2-7a1 1 0 0 1 .84-.72L22 2h4zm1 16H5v7a2 2 0 0 0 1.7 1.98l.15.01L7 27h18a2 2 0 0 0 2-1.85V18zm-16-5H8v3h3v-3zm14.24-9h-2.49l-1.43 5h5.35l-1.43-5z"></path></svg>
+                                </div>
+
+                                <div class="texto">Espaço de trabalho exclusivo</div>
+                            </div>
+                            
+                            <div class="rows" id="esconder">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26 19a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM7 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm20.7-5 .41 1.12A4.97 4.97 0 0 1 30 18v9a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2H8v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9c0-1.57.75-2.96 1.89-3.88L4.3 13H2v-2h3v.15L6.82 6.3A2 2 0 0 1 8.69 5h14.62c.83 0 1.58.52 1.87 1.3L27 11.15V11h3v2h-2.3zM6 25H4v2h2v-2zm22 0h-2v2h2v-2zm0-2v-5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v5h24zm-3-10h.56L23.3 7H8.69l-2.25 6H25zm-15 7h12v-2H10v2z"></path></svg>
+                                </div>
+
+                                <div class="texto">Estacionamento incluído</div>
+                            </div>
+                            
+                            <div class="rows" id="esconder">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M9.5 2a4.5 4.5 0 0 1 3.53 7.3c.6.21 1.17.54 1.66.98l.19.19L17.4 13H31v2h-2v14a2 2 0 0 1-1.85 2H5a2 2 0 0 1-2-1.85V15H1v-2h2.1a5 5 0 0 1 2.96-3.6A4.5 4.5 0 0 1 9.5 2zm7.08 13H5v14h22V15h-7.59l3.3 3.3-1.42 1.4zM9.5 4a2.5 2.5 0 0 0-1 4.8V11H8a3 3 0 0 0-2.83 2h9.41l-1.12-1.12a3 3 0 0 0-1.92-.87l-.2-.01h-.84V8.8a2.5 2.5 0 0 0-1-4.8zm15.49-3a6.96 6.96 0 0 1-1.8 4.07l-.45.46A8.97 8.97 0 0 0 20.35 11h-2a10.97 10.97 0 0 1 3.2-7.12A4.96 4.96 0 0 0 22.97 1zm2 0h2a10.96 10.96 0 0 1-3.2 7.12A4.97 4.97 0 0 0 24.38 11h-2a6.97 6.97 0 0 1 1.8-4.06l.44-.47A8.96 8.96 0 0 0 26.99 1z"></path></svg>
+                                </div>
+
+                                <div class="texto">Jacuzzi privativa: disponível o ano todo, disponível 24 horas</div>
+                            </div>
+                        
+                            <div class="rows" id="esconder">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M17 1v4.03l4.03-2.32 1 1.73L17 7.34v6.93l6-3.47V5h2v4.65l3.49-2.02 1 1.74L26 11.38l4.03 2.33-1 1.73-5.03-2.9L18 16l6 3.46 5.03-2.9 1 1.73L26 20.62l3.49 2.01-1 1.74L25 22.35V27h-2v-5.8l-6-3.47v6.93l5.03 2.9-1 1.73L17 26.97V31h-2v-4.03l-4.03 2.32-1-1.73 5.03-2.9v-6.93L9 21.2V27H7v-4.65l-3.49 2.02-1-1.74L6 20.62l-4.03-2.33 1-1.73L8 19.46 14 16l-6-3.46-5.03 2.9-1-1.73L6 11.38 2.51 9.37l1-1.74L7 9.65V5h2v5.8l6 3.47V7.34l-5.03-2.9 1-1.73L15 5.03V1z"></path></svg>
+                                </div>
+
+                                <div class="texto">Ar-condicionado split</div>
+                            </div>
+
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M2.05 6.3 4 8.23V25a3 3 0 0 0 2.82 3h16.94l1.95 1.95c-.16.02-.33.04-.5.04L25 30H7a5 5 0 0 1-5-4.78V7c0-.24.02-.48.05-.7zm1.66-4 26 26-1.42 1.4-26-26 1.42-1.4zM25 2a5 5 0 0 1 5 4.78V25a5 5 0 0 1-.05.7L28 23.77V7a3 3 0 0 0-2.82-3H8.24L6.3 2.05c.16-.02.33-.04.5-.04L7 2h18zM11.1 17a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+                                </div>
+
+                                <div class="texto"> <s>Alarme de monóxido de carbono</s> </div>
+                            </div>
+
+                            <div class="rows">
+                                <div class="icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m3.49 7.73 1.44 1.44A12.94 12.94 0 0 0 3 16a13 13 0 0 0 19.82 11.07l1.45 1.44A14.93 14.93 0 0 1 16 31 15 15 0 0 1 3.49 7.73zm.22-5.44 26 26-1.42 1.42-26-26 1.42-1.42zM16 1a15 15 0 0 1 12.52 23.27l-1.45-1.45A12.94 12.94 0 0 0 29 16 13 13 0 0 0 16 3a12.94 12.94 0 0 0-6.83 1.93L7.74 3.5A14.93 14.93 0 0 1 16 1zm-4.9 16a5 5 0 0 0 3.9 3.9v2.03A7 7 0 0 1 9.07 17h2.03zm5.9 4.24 1.35 1.36a6.95 6.95 0 0 1-1.35.33v-1.69zM21.24 17h1.69c-.07.47-.18.92-.34 1.35L21.24 17zM17 9.07A7 7 0 0 1 22.93 15H20.9a5 5 0 0 0-3.9-3.9V9.07zm-7.6 4.58L10.76 15H9.07c.07-.47.18-.92.33-1.35zM15 9.07v1.69L13.65 9.4A6.95 6.95 0 0 1 15 9.07zM23 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path></svg>
+                                </div>
+
+                                <div class="texto"><s>Detector de fumaça</s></div>
+                            </div>
+                            
+                            <div class="btn_oferecido">
+                                <button type="button">Mostrar todas as 36 comodidades</button>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                    <section id="card-preco">
+                        
+                        <div id="preco-titulo">
+                            Adicione datas para ver os preços
+                        </div>
+
+                        
+                        <div class="check-in"> <strong>Check-in</strong>
+                            <p>Adicione uma data</p>
+                        </div>
+
+                        <div class="check-out"> <strong>Check-out</strong>
+                            <p>Adicione uma data</p>
+                        </div>                    
+                        
+                        
+                            <div id="pessoas">  <strong>Hóspedes</strong>
+                                <p>Quantas pessoas ?</p>
+                            </div>
+
+                        <div id="comprar">
+                            <button id="botao"> Conferir disponibilidade</button>
+                        </div>
+
+                    </section>
+            
+                </section>
+
+                <hr id="linha_horizontal">
+
+                <section>
+
+                    <div class="quali_coment">
+                            <div class="quali_coment_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" ><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                            </div>
+                            <div>
+                                <strong id="vai">4,97</strong>
+                            </div>
+                            <div>
+                                <strong> 175 comentários</strong>
+                            </div>
+                        </div>
+
+                    <div class="ro-ge">
+
+                        
+                        <div class="role">
+                            <div>
+                                <img src="./img/barra de satisfacao.png" alt="foto da satisfacao dos comentarios">
+                            </div>
+                        </div>
+
+                        <div class="role">
+                            <div class="titulo_rolo">Limpeza</div>
+                            <div class="classi">4,9</div>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M24 0v6h-4.3c.13 1.4.67 2.72 1.52 3.78l.2.22-1.5 1.33a9.05 9.05 0 0 1-2.2-5.08c-.83.38-1.32 1.14-1.38 2.2v4.46l4.14 4.02a5 5 0 0 1 1.5 3.09l.01.25.01.25v8.63a3 3 0 0 1-2.64 2.98l-.18.01-.21.01-12-.13A3 3 0 0 1 4 29.2L4 29.02v-8.3a5 5 0 0 1 1.38-3.45l.19-.18L10 12.9V8.85l-4.01-3.4.02-.7A5 5 0 0 1 10.78 0H11zm-5.03 25.69a8.98 8.98 0 0 1-6.13-2.41l-.23-.23A6.97 6.97 0 0 0 6 21.2v7.82c0 .51.38.93.87 1H7l11.96.13h.13a1 1 0 0 0 .91-.88l.01-.12v-3.52c-.34.04-.69.06-1.03.06zM17.67 2H11a3 3 0 0 0-2.92 2.3l-.04.18-.01.08 3.67 3.1h2.72l.02-.1a4.29 4.29 0 0 1 3.23-3.4zM30 4a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-3-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 0h-2.33v2H22zm8-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM20 20.52a3 3 0 0 0-.77-2l-.14-.15-4.76-4.61v-4.1H12v4.1l-5.06 4.78a3 3 0 0 0-.45.53 9.03 9.03 0 0 1 7.3 2.34l.23.23A6.98 6.98 0 0 0 20 23.6z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="role">
+                            <div class="titulo_rolo">Exatidão do anúncio</div>
+                            <div class="classi">5,0</div>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 1a15 15 0 1 1 0 30 15 15 0 0 1 0-30zm0 2a13 13 0 1 0 0 26 13 13 0 0 0 0-26zm7 7.59L24.41 12 13.5 22.91 7.59 17 9 15.59l4.5 4.5z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="role">
+                            <div class="titulo_rolo">Check-in</div>
+                            <div class="classi">5,0</div>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.84 27.16v-3.4l-.26.09c-.98.32-2.03.51-3.11.55h-.7A11.34 11.34 0 0 1 1.72 13.36v-.59A11.34 11.34 0 0 1 12.77 1.72h.59c6.03.16 10.89 5.02 11.04 11.05V13.45a11.3 11.3 0 0 1-.9 4.04l-.13.3 7.91 7.9v5.6H25.7l-4.13-4.13zM10.31 7.22a3.1 3.1 0 1 1 0 6.19 3.1 3.1 0 0 1 0-6.2zm0 2.06a1.03 1.03 0 1 0 0 2.06 1.03 1.03 0 0 0 0-2.06zM22.43 25.1l4.12 4.13h2.67v-2.67l-8.37-8.37.37-.68.16-.3c.56-1.15.9-2.42.96-3.77v-.64a9.28 9.28 0 0 0-9-9h-.55a9.28 9.28 0 0 0-9 9v.54a9.28 9.28 0 0 0 13.3 8.1l.3-.16 1.52-.8v4.62z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="role">
+                            <div class="titulo_rolo">Comunicação</div>
+                            <div class="classi">5,0</div>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.95 3.81a2 2 0 0 0-2.38-1.52l-7.58 1.69-10-2-8.42 1.87A1.99 1.99 0 0 0 1 5.8v21.95a1.96 1.96 0 0 0 .05.44 2 2 0 0 0 2.38 1.52l7.58-1.69 10 2 8.42-1.87A1.99 1.99 0 0 0 31 26.2V4.25a1.99 1.99 0 0 0-.05-.44zM12 4.22l8 1.6v21.96l-8-1.6zM3 27.75V5.8l-.22-.97.22.97 7-1.55V26.2zm26-1.55-7 1.55V5.8l7-1.55z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="role">
+                            <div class="titulo_rolo">Localização</div>
+                            <div class="classi">4,8</div>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.95 3.81a2 2 0 0 0-2.38-1.52l-7.58 1.69-10-2-8.42 1.87A1.99 1.99 0 0 0 1 5.8v21.95a1.96 1.96 0 0 0 .05.44 2 2 0 0 0 2.38 1.52l7.58-1.69 10 2 8.42-1.87A1.99 1.99 0 0 0 31 26.2V4.25a1.99 1.99 0 0 0-.05-.44zM12 4.22l8 1.6v21.96l-8-1.6zM3 27.75V5.8l-.22-.97.22.97 7-1.55V26.2zm26-1.55-7 1.55V5.8l7-1.55z"></path></svg>
+                            </div>
+                        </div>
+
+                        <div class="role">
+                            <div class="titulo_rolo">Custo-benefício</div>
+                            <div class="classi">4,7</div>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16.17 2a3 3 0 0 1 1.98.74l.14.14 11 11a3 3 0 0 1 .14 4.1l-.14.14L18.12 29.3a3 3 0 0 1-4.1.14l-.14-.14-11-11A3 3 0 0 1 2 16.37l-.01-.2V5a3 3 0 0 1 2.82-3h11.35zm0 2H5a1 1 0 0 0-1 .88v11.29a1 1 0 0 0 .2.61l.1.1 11 11a1 1 0 0 0 1.31.08l.1-.08L27.88 16.7a1 1 0 0 0 .08-1.32l-.08-.1-11-11a1 1 0 0 0-.58-.28L16.17 4zM9 6a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr id="linha_horizontal">
+
+                <section >
+
+                    <div >
+                        <div class="avaliar">
+                            <div class="comentarios_geral">
+                            
+                                <div class="info_people">
+                                    <div>
+                                        <img src="https://a0.muscache.com/im/pictures/user/8d0b0d2e-f6c3-45b3-bb39-28b4b306c105.jpg?im_w=240" alt=""></div>
+                                    <div>
+                                        <h3>Deise</h3>
+                                        <p>São Paulo, Brasil</p> 
+                                    </div>
+                                </div>
+    
+                                <div class="conteudo">
+                                    <div class="classificacao"> 
+                                        <div class="estrela">
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <div class="data bolinha">fevereiro de 2024</div>
+                                        
+                                        <div class="estadia bolinha">Ficou uma noite</div>
+                                    </div>
+                                    
+                                    <p>Um lugar incrível, vc se sente dentro da natureza, acordei às 5:30 pra ver o nascer do sol ao som de pássaros e maritacas...</p>
+    
+                                    <div id="mais_info"> Mostrar mais</div>
+                                </div>
+                            </div>
+                            
+                            <div class="comentarios_geral">
+                                
+                                <div class="info_people">
+                                    <div>
+                                        <img src="https://a0.muscache.com/im/pictures/user/00e4eec2-8450-45a1-a6b9-c757e6630ba4.jpg?im_w=240" alt=""></div>
+                                    <div>
+                                        <h3>Marcia</h3>
+                                        <p>Brasil</p> 
+                                    </div>
+                                </div>
+    
+                                <div class="conteudo">
+                                    <div class="classificacao"> 
+                                        <div class="estrela">
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <div class="data bolinha">janeiro de 2024</div>
+                                        
+                                        <div class="estadia bolinha">Ficou algumas noites</div>
+                                    </div>
+                                    
+                                    <p>Lugar lindo e tranquilo. Vista incrível. Adoramos. A cachorrinha Mia nos acompanhou nas trilhas. Iremos voltar com certeza.</p>
+    
+                                    <div id="mais_info"> Mostrar mais</div>
+                                </div>
+                            </div>
+    
+                            <div class="comentarios_geral">
+                                
+                                <div class="info_people">
+                                    <div><img src="https://a0.muscache.com/im/pictures/user/User-17614130/original/0abc5d89-4d2f-4c1d-ae7d-307ab9759c73.jpeg?im_w=240" alt=""></div>
+                                    <div>
+                                        <h3>Mayra</h3>
+                                        <p>Berlim, Alemanha</p> 
+                                    </div>
+                                </div>
+    
+                                <div class="conteudo">
+                                    <div class="classificacao"> 
+                                        <div class="estrela">
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <div class="data bolinha">janeiro de 2024</div>
+                                        
+                                        <div class="estadia bolinha">Ficou algumas noites</div>
+                                    </div>
+                                    
+                                    <p>Um dos lugares mais agradáveis que já visitamos. Estávamos procurando paz, privacidade e proximidade com a natureza e descobrimos exatamente isso. Um.. </p>
+    
+                                    <div id="mais_info"> Mostrar mais</div>
+                                </div>
+                            </div>
+    
+                            <div class="comentarios_geral">
+                                
+                                <div class="info_people">
+                                    <div><img src="https://a0.muscache.com/im/pictures/user/User-373330541/original/eb01c0cf-e231-454a-9329-2212f45f0ddf.jpeg?im_w=240" alt=""></div>
+                                    <div>
+                                        <h3>Karen</h3>
+                                        <p>Rio de Janeiro, Brasil</p> 
+                                    </div>
+                                </div>
+    
+                                <div class="conteudo">
+                                    <div class="classificacao"> 
+                                        <div class="estrela">
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                            <div class="estrela_div">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                            </div>
+                                        </div>
+    
+                                        <div class="data bolinha">dezembro de 2023</div>
+                                        
+                                        <div class="estadia bolinha">Ficou algumas noites</div>
+                                    </div>
+                                    
+                                    <p>Tivemos uma experiência simplesmente incrível, o Ale é um ótimo anfitrião, simpático e super solícito! A cabana é equipada com tudo de muita qualidade, é tranquilo e sup...</p>
+    
+                                    <div id="mais_info"> Mostrar mais</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mais_come">
+                            <button type="button">Mostrar todos os 175 comentários</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr id="linha_horizontal">
+
+                <section>
+                    <div class="map_titulo">
+                        <h3>Onde você estará</h3></div>
+
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5197.6309186472245!2d-45.822596035993776!3d-22.903038499976663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc691383294853%3A0x25516041a18d439f!2sClube%20do%20Mato!5e0!3m2!1spt-BR!2sbr!4v1711294165392!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="estadia-anfi map_desc">
+                        <h3>Monteiro Lobato, São Paulo, Brasil</h3>
+                        <p>A pérola de Monteiro Lobato é o Bairro dos Souzas. <br>
+                            Aqui há uma venda de produtos orgânicos, veganos e sustentáveis. <br>
+                            Também tem um mercado com tudo que você possa imaginar, a apenas 3km da cabana.
+                        </p>
+                        
+                        <div id="mais_info"> Mostrar mais</div>
+                    </div>
+                </section>
+
+                <hr id="linha_horizontal">
+
+                <section id="sobre_anfi">
+                    
+                    <div class="anfitri">
+                        <img src="https://a0.muscache.com/im/pictures/user/2dd3a449-0009-43e7-af7f-ab57e4ba25c5.jpg?im_w=240" >
+                        
+                        <div class="texto">
+                            <h3>Hospedado por Alexandre</h3>
+                            <p>Membro desde abril de 2017</p>
+                        </div>
+                    </div>
+
+                    <div class="anfi">
+                        
+                        <div class="ava_veri">
+                            <div class="ava_veri_mobile">
+                                <div class="icone_anfi">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icone_anfi" viewBox="0 0 32 32" ><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
+                                </div>
+                            
+                                <div><p>223 avaliações</p></div>
+                            </div>
+                            
+                            <div class="ava_veri_mobile">
+                                <div class="icone_anfi">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icone_anfi" viewBox="0 0 32 32"><path d="m16 .8.56.37C20.4 3.73 24.2 5 28 5h1v12.5C29 25.57 23.21 31 16 31S3 25.57 3 17.5V5h1c3.8 0 7.6-1.27 11.45-3.83L16 .8zm7 9.08-9.5 9.5-4.5-4.5L6.88 17l6.62 6.62L25.12 12 23 9.88z"></path></svg>
+                                </div>
+                            
+                                <div><p>Identidade verificada</p></div>
+                            </div>
+                        </div>
+
+                        <div class="text">
+                            <h3>Superhost</h3>
+                            <p>Sou professor de yoga e meditação. Eu amo viajar mas também manter uma rotina próximo a natureza. No momento inspirado em trabalhar com madeira e criar peças e casas malucas! :)</p>
+                        </div>
+
+                        <div class="confitriao">
+                            <h3>Coanfitriões</h3>
+                            
+                            <div class="confi">
+                                <img src="https://a0.muscache.com/im/pictures/user/705f1c1c-05d0-4607-ba0b-c70c331a6261.jpg?im_w=240">
+                                <p>Tissyana</p>
+                            </div>
+                        </div>
+
+                        <div class="estadia-anfi">
+                            <h3>Durante sua estadia</h3>
+                            <p>Estarei disponível, caso algo seja necessário.</p>
+                        </div>
+                        
+                        <div class="estadia-anfi">
+                            <h3>Alexandre é Superhost</h3>
+                            <p>Superhosts são anfitriões experientes, com ótimas avaliações e que se empenham em oferecer estadias incríveis para os hóspedes.</p>
+                        </div>
+                    </div>
+
+                    <div class="idiomas">
+                        <div><p>Idiomas: English, Português, Español</p></div>
+                        <div><p>Taxa de resposta: 100%</p></div>
+                        <div><p>Tempo de resposta: em até uma hora</p></div>
+
+                        <div>
+                            <button type="button">Fale com o anfitrião</button>
+                        </div>
+
+                        <div class="dado_paga">
+                            <div class="icone_paga">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><g stroke="none"><path d="m25 5 .5846837.00517475c4.2905015.07574932 8.8374917.98334075 13.644943 2.73687823l.7703733.28794702v27.3705076l-.0084766.1301365c-.0392237.2994207-.2122236.5656263-.4699074.7230756l-.1154775.0605995-11.4234694 5.0774159c.0623636-.7458456-.0433445-1.4943022-.3209346-2.2783707-.2495178-.7044496-.7667703-1.7805075-1.0418654-2.3950548-1.9094732-4.1561789-3.9589781-8.3688465-6.0912876-12.5211487l-.3317555-.6369277c-.4686141-.9115826-.8248653-1.6297768-1.3147672-2.2052384-.743401-.8737317-1.7668654-1.3549948-2.8821508-1.3549948-1.1154695 0-2.1391179.4816323-2.8828868 1.3557332-.6050254.7114646-1.0306408 1.6819288-1.6457867 2.8412431-.4956822.9653459-.9868615 1.9338929-1.47282629 2.9041739l.00159179-19.0721502.769087-.28647781c4.798406-1.75037189 9.3373349-2.65799308 13.6207364-2.73688762z" fill-opacity=".2"></path><path d="m25 1c5.5985197 0 11.5175072 1.27473768 17.7548231 3.81642897.7027419.28641855 1.1783863.94329535 1.2386823 1.69066764l.0064946.16143432v28.73197667c0 1.8999458-1.0758761 3.6285379-2.7638433 4.4721215l-.2054644.0969363-15.0427818 6.6856808c-.4614217.2050763-1.8621146.3276624-2.7955525.3430957l-.192358.0016581.0009065-1.0005013c.6483674-.0069073 1.2843321-.1330366 1.8784107-.3747752.8327784-.3388673 1.5457548-.8939986 2.0790671-1.5885618l13.2600311-5.8942194c1.023196-.4547538 1.7028179-1.4383245 1.7751735-2.5449525l.0064111-.1964822v-28.73197667l-.6916987-.27704554c-5.7517231-2.26330416-11.1871718-3.39148539-16.3083013-3.39148539-5.1211255 0-10.5565697 1.12817946-16.3082877 3.39148006l-.6917123.27707479-.00030284 24.49382405c-.68067737 1.4079172-1.34834149 2.8151846-2.00083161 4.2173468l.00113445-28.71117085c0-.81311953.4922453-1.5453083 1.24525131-1.85215622 6.23725069-2.54166294 12.15623339-3.81639863 17.75474869-3.81639863z"></path></g><path d="m15.999908 41.6930234.6867258-.8851772c1.5957359-2.0328613 2.5919668-3.8873951 2.9612752-5.511912.2804314-1.2318637.2318527-2.5167089-.4804505-3.5591688-.6801015-.9952012-1.8642067-1.5894421-3.1673665-1.5894421-1.3033438 0-2.487633.5940563-3.1675505 1.5890729-.7099111 1.039137-.761802 2.3201055-.4810025 3.5580612.3689403 1.6247015 1.3653552 3.4796045 2.9616432 5.5133888l.6867258.8851772.6447715.7192179c1.1495113 1.2599236 2.1735278 2.122579 3.2227536 2.7149739.8151649.4602182 1.6400823.7413704 2.4521191.8358878.8812245.1033783 1.7585848-.0123685 2.559765-.3383795 1.6422905-.6682672 2.8186673-2.1775911 3.0700251-3.9387151.1205267-.8438258.0264975-1.6854363-.2876078-2.572644-.2495178-.7044496-.7667703-1.7805075-1.0418654-2.3950548-1.9094732-4.1561789-3.9589781-8.3688465-6.0912876-12.5211487-.6486357-1.2222643-1.0477537-2.1388241-1.6465227-2.8421661-.743401-.8737317-1.7668654-1.3549948-2.8821508-1.3549948-1.1154695 0-2.1391179.4816323-2.8828868 1.3557332-.6050254.7114646-1.0306408 1.6819288-1.6457867 2.8412431-2.1326775 4.1534098-4.1819984 8.3660775-6.09128759 12.5211487-.28227155.6306079-.79308369 1.6933742-1.04168139 2.3948702-.3141053.8872077-.40813448 1.7288182-.28760784 2.5731978.25117384 1.7609394 1.42736664 3.2700787 3.06965711 3.9385305.81939715.3333951 1.69418134.4397272 2.55958102.3385641.81295679-.0948866 1.63805829-.3760388 2.45248709-.8360724 1.0492258-.5922103 2.0732422-1.4550503 3.2227536-2.7149739z" fill="none" stroke-width="2"></path></g></svg>
+                            </div>
+
+                            <p>Para proteger seu pagamento, nunca transfira dinheiro ou se comunique fora do site ou aplicativo do Airbnb.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr id="linha_horizonta_3" class="ver_mobile">
+
+                <section>
+
+
+                    <div class="sla">
+                        <h3>O que você deve saber</h3>
+                    </div>
+
+                    <div class="lista">
+                    
+                        <div>
+                            <h3 class="titulo_saber">Regras da casa</h3>
+
+                            <p class="texto_saber">Check-in: 15:00 - 00:00</p>
+                            <p class="texto_saber">Checkout antes das 11:00</p>
+                            <p class="texto_saber">Máximo de 2 hóspedes</p>
 
                             <div id="mais_info"> Mostrar mais</div>
                         </div>
-                    </div>
                     
-                    <div class="comentarios_geral">
-                        
-                        <div class="info_people">
-                            <div><img src="https://a0.muscache.com/im/pictures/user/00e4eec2-8450-45a1-a6b9-c757e6630ba4.jpg?im_w=240" alt=""></div>
-                            <div>
-                                <h3>Marcia</h3>
-                                <p>Brasil</p> 
-                            </div>
-                        </div>
+                        <hr id="linha_horizonta_3" class="ver_mobile">
 
-                        <div class="conteudo">
-                            <div class="classificacao"> 
-                                <div class="estrela">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                </div>
+                        <div>
+                            <h3 class="titulo_saber">Segurança e propriedade</h3>
 
-                                <div class="data">janeiro de 2024</div>
-                                
-                                <div class="estadia"> Ficou algumas noites</div>
-                            </div>
-                            
-                            <p>Lugar lindo e tranquilo. Vista incrível. Adoramos. A cachorrinha Mia nos acompanhou nas trilhas. Iremos voltar com certeza.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="comentarios_geral">
-                        
-                        <div class="info_people">
-                            <div><img src="https://a0.muscache.com/im/pictures/user/User-17614130/original/0abc5d89-4d2f-4c1d-ae7d-307ab9759c73.jpeg?im_w=240" alt=""></div>
-                            <div>
-                                <h3>Mayra</h3>
-                                <p>Berlim, Alemanha</p> 
-                            </div>
-                        </div>
-
-                        <div class="conteudo">
-                            <div class="classificacao"> 
-                                <div class="estrela">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                </div>
-
-                                <div class="data">janeiro de 2024</div>
-                                
-                                <div class="estadia">Ficou algumas noites</div>
-                            </div>
-                            
-                            <p>Um dos lugares mais agradáveis que já visitamos. Estávamos procurando paz, privacidade e proximidade com a natureza e descobrimos exatamente isso. Um.. </p>
+                            <p class="texto_saber">Não há alarme de fumaça</p>
+                            <p class="texto_saber">Local alto sem parapeito ou proteção</p>
+                            <p class="texto_saber">Detector de monóxido de carbono não é necessário</p>
 
                             <div id="mais_info"> Mostrar mais</div>
                         </div>
-                    </div>
+                    
+                        <hr id="linha_horizonta_3" class="ver_mobile">
 
-                    <div class="comentarios_geral">
+                        <div>
+                            <h3 class="titulo_saber">Política de cancelamento</h3>
+
+                            <p class="texto_saber">Adicione as datas de viagem para obter as informações de cancelamento dessa reserva.</p>
                         
-                        <div class="info_people">
-                            <div><img src="https://a0.muscache.com/im/pictures/user/User-373330541/original/eb01c0cf-e231-454a-9329-2212f45f0ddf.jpeg?im_w=240" alt=""></div>
-                            <div>
-                                <h3>Karen</h3>
-                                <p>Rio de Janeiro, Brasil</p> 
-                            </div>
-                        </div>
-
-                        <div class="conteudo">
-                            <div class="classificacao"> 
-                                <div class="estrela">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 0.5625rem; width: 0.5625rem; fill: var(--f-k-smk-x);"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                                </div>
-
-                                <div class="data">dezembro de 2023</div>
-                                
-                                <div class="estadia">Ficou algumas noites</div>
-                            </div>
-                            
-                            <p>Tivemos uma experiência simplesmente incrível, o Ale é um ótimo anfitrião, simpático e super solícito! A cabana é equipada com tudo de muita qualidade, é tranquilo e sup...</p>
-
                             <div id="mais_info"> Mostrar mais</div>
                         </div>
                     </div>
-                    
-
-                    <div class="mais_come">
-                        <button type="button">Mostrar todos os 175 comentários</button>
-                    </div>
-                </div>
-
-            </section>
-
-            <hr id="linha_horizontal">
-
-            <section>
-                <div class="map_titulo">
-                    <h3>Onde você estará</h3></div>
-
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5197.6309186472245!2d-45.822596035993776!3d-22.903038499976663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc691383294853%3A0x25516041a18d439f!2sClube%20do%20Mato!5e0!3m2!1spt-BR!2sbr!4v1711294165392!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="estadia-anfi map_desc">
-                    <h3>Monteiro Lobato, São Paulo, Brasil</h3>
-                    <p>A pérola de Monteiro Lobato é o Bairro dos Souzas. <br>
-                        Aqui há uma venda de produtos orgânicos, veganos e sustentáveis. <br>
-                        Também tem um mercado com tudo que você possa imaginar, a apenas 3km da cabana.
-                    </p>
-                    
-                    <div id="mais_info"> Mostrar mais</div>
-                </div>
-            </section>
-
-            <hr id="linha_horizontal">
-
-            <section id="sobre_anfi">
-                
-                <div class="anfitri">
-                    <img src="https://a0.muscache.com/im/pictures/user/2dd3a449-0009-43e7-af7f-ab57e4ba25c5.jpg?im_w=240" >
-                    <div class="texto">
-                        <h3>Hospedado por Alexandre</h3>
-                        <p>Membro desde abril de 2017</p>
-                    </div>
-                </div>
-
-                <div class="anfi">
-                    
-                    <div class="ava_veri">
-                        <div class="icone_anfi">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icone_anfi" viewBox="0 0 32 32" ><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>
-                        </div>
-                        
-                        <div><p>223 avaliações</p></div>
-                        
-                        <div class="icone_anfi">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icone_anfi" viewBox="0 0 32 32"><path d="m16 .8.56.37C20.4 3.73 24.2 5 28 5h1v12.5C29 25.57 23.21 31 16 31S3 25.57 3 17.5V5h1c3.8 0 7.6-1.27 11.45-3.83L16 .8zm7 9.08-9.5 9.5-4.5-4.5L6.88 17l6.62 6.62L25.12 12 23 9.88z"></path></svg>
-                        </div>
-                        
-                        <div><p>Identidade verificada</p></div>
-                        
-                    </div>
-
-                    <div class="text">
-                        <h3>Superhost</h3>
-                        <p>Sou professor de yoga e meditação. Eu amo viajar mas também manter uma rotina próximo a natureza. No momento inspirado em trabalhar com madeira e criar peças e casas malucas! :)</p>
-                    </div>
-
-                    <div class="confitriao">
-                        <h3>Coanfitriões</h3>
-                        
-                        <div class="confi">
-                            <img src="https://a0.muscache.com/im/pictures/user/705f1c1c-05d0-4607-ba0b-c70c331a6261.jpg?im_w=240">
-                            <p>Tissyana</p>
-                        </div>
-                    </div>
-
-                    <div class="estadia-anfi">
-                        <h3>Durante sua estadia</h3>
-                        <p>Estarei disponível, caso algo seja necessário.</p>
-                    </div>
-                    
-                    <div class="estadia-anfi">
-                        <h3>Alexandre é Superhost</h3>
-                        <p>Superhosts são anfitriões experientes, com ótimas avaliações e que se empenham em oferecer estadias incríveis para os hóspedes.</p>
-                    </div>
-                </div>
-
-                <div class="idiomas">
-                    <div><p>Idiomas: English, Português, Español</p></div>
-                    <div><p>Taxa de resposta: 100%</p></div>
-                    <div><p>Tempo de resposta: em até uma hora</p></div>
-
-                    <div>
-                        <button type="button">Fale com o anfitrião</button>
-                    </div>
-
-                    <div class="dado_paga">
-                        <div class="icone_paga">
-                            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><g stroke="none"><path d="m25 5 .5846837.00517475c4.2905015.07574932 8.8374917.98334075 13.644943 2.73687823l.7703733.28794702v27.3705076l-.0084766.1301365c-.0392237.2994207-.2122236.5656263-.4699074.7230756l-.1154775.0605995-11.4234694 5.0774159c.0623636-.7458456-.0433445-1.4943022-.3209346-2.2783707-.2495178-.7044496-.7667703-1.7805075-1.0418654-2.3950548-1.9094732-4.1561789-3.9589781-8.3688465-6.0912876-12.5211487l-.3317555-.6369277c-.4686141-.9115826-.8248653-1.6297768-1.3147672-2.2052384-.743401-.8737317-1.7668654-1.3549948-2.8821508-1.3549948-1.1154695 0-2.1391179.4816323-2.8828868 1.3557332-.6050254.7114646-1.0306408 1.6819288-1.6457867 2.8412431-.4956822.9653459-.9868615 1.9338929-1.47282629 2.9041739l.00159179-19.0721502.769087-.28647781c4.798406-1.75037189 9.3373349-2.65799308 13.6207364-2.73688762z" fill-opacity=".2"></path><path d="m25 1c5.5985197 0 11.5175072 1.27473768 17.7548231 3.81642897.7027419.28641855 1.1783863.94329535 1.2386823 1.69066764l.0064946.16143432v28.73197667c0 1.8999458-1.0758761 3.6285379-2.7638433 4.4721215l-.2054644.0969363-15.0427818 6.6856808c-.4614217.2050763-1.8621146.3276624-2.7955525.3430957l-.192358.0016581.0009065-1.0005013c.6483674-.0069073 1.2843321-.1330366 1.8784107-.3747752.8327784-.3388673 1.5457548-.8939986 2.0790671-1.5885618l13.2600311-5.8942194c1.023196-.4547538 1.7028179-1.4383245 1.7751735-2.5449525l.0064111-.1964822v-28.73197667l-.6916987-.27704554c-5.7517231-2.26330416-11.1871718-3.39148539-16.3083013-3.39148539-5.1211255 0-10.5565697 1.12817946-16.3082877 3.39148006l-.6917123.27707479-.00030284 24.49382405c-.68067737 1.4079172-1.34834149 2.8151846-2.00083161 4.2173468l.00113445-28.71117085c0-.81311953.4922453-1.5453083 1.24525131-1.85215622 6.23725069-2.54166294 12.15623339-3.81639863 17.75474869-3.81639863z"></path></g><path d="m15.999908 41.6930234.6867258-.8851772c1.5957359-2.0328613 2.5919668-3.8873951 2.9612752-5.511912.2804314-1.2318637.2318527-2.5167089-.4804505-3.5591688-.6801015-.9952012-1.8642067-1.5894421-3.1673665-1.5894421-1.3033438 0-2.487633.5940563-3.1675505 1.5890729-.7099111 1.039137-.761802 2.3201055-.4810025 3.5580612.3689403 1.6247015 1.3653552 3.4796045 2.9616432 5.5133888l.6867258.8851772.6447715.7192179c1.1495113 1.2599236 2.1735278 2.122579 3.2227536 2.7149739.8151649.4602182 1.6400823.7413704 2.4521191.8358878.8812245.1033783 1.7585848-.0123685 2.559765-.3383795 1.6422905-.6682672 2.8186673-2.1775911 3.0700251-3.9387151.1205267-.8438258.0264975-1.6854363-.2876078-2.572644-.2495178-.7044496-.7667703-1.7805075-1.0418654-2.3950548-1.9094732-4.1561789-3.9589781-8.3688465-6.0912876-12.5211487-.6486357-1.2222643-1.0477537-2.1388241-1.6465227-2.8421661-.743401-.8737317-1.7668654-1.3549948-2.8821508-1.3549948-1.1154695 0-2.1391179.4816323-2.8828868 1.3557332-.6050254.7114646-1.0306408 1.6819288-1.6457867 2.8412431-2.1326775 4.1534098-4.1819984 8.3660775-6.09128759 12.5211487-.28227155.6306079-.79308369 1.6933742-1.04168139 2.3948702-.3141053.8872077-.40813448 1.7288182-.28760784 2.5731978.25117384 1.7609394 1.42736664 3.2700787 3.06965711 3.9385305.81939715.3333951 1.69418134.4397272 2.55958102.3385641.81295679-.0948866 1.63805829-.3760388 2.45248709-.8360724 1.0492258-.5922103 2.0732422-1.4550503 3.2227536-2.7149739z" fill="none" stroke-width="2"></path></g></svg>
-                        </div>
-
-                        <p>Para proteger seu pagamento, nunca transfira dinheiro ou se comunique fora do site ou aplicativo do Airbnb.</p>
-                    </div>
-                </div>
-
-            </section>
-
-            <hr id="linha_horizonta_3" class="ver_mobile">
-
-            <section>
-
-
-                <div class="sla">
-                    <h3>O que você deve saber</h3>
-                </div>
-
-                <div class="lista">
-                
-                    <div>
-                        <h3 class="titulo_saber">Regras da casa</h3>
-
-                        <p class="texto_saber">Check-in: 15:00 - 00:00</p>
-                        <p class="texto_saber">Checkout antes das 11:00</p>
-                        <p class="texto_saber">Máximo de 2 hóspedes</p>
-
-                        <div id="mais_info"> Mostrar mais</div>
-                    </div>
-                
-                    <hr id="linha_horizonta_3" class="ver_mobile">
-
-                    <div>
-                        <h3 class="titulo_saber">Segurança e propriedade</h3>
-
-                        <p class="texto_saber">Não há alarme de fumaça</p>
-                        <p class="texto_saber">Local alto sem parapeito ou proteção</p>
-                        <p class="texto_saber">Detector de monóxido de carbono não é necessário</p>
-
-                        <div id="mais_info"> Mostrar mais</div>
-                    </div>
-                
-                    <hr id="linha_horizonta_3" class="ver_mobile">
-
-                    <div>
-                        <h3 class="titulo_saber">Política de cancelamento</h3>
-
-                        <p class="texto_saber">Adicione as datas de viagem para obter as informações de cancelamento dessa reserva.</p>
-                    
-                        <div id="mais_info"> Mostrar mais</div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
+                </section>
+            </main>
+        </div>
     </div>       
 
     <hr id="linha_horizontal_1">
