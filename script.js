@@ -22,7 +22,6 @@ toggleSlider = () => {
 //Função para fechar o slider de imagens
 let btn = document.querySelector(".close")
 let div = document.querySelector("#container")
-let cardPrec = document.getElementById("#card-preco");
 
 btn.addEventListener('click', () =>{
     cardPreco.classList.remove("shreck")
