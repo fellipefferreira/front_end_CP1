@@ -521,6 +521,10 @@ input{
   'okay okay';
 }
 
+#card-preco.shreck {
+  opacity: 0;
+}
+
 #preco-titulo {
   grid-area: titulo;
   font-size: 1.5rem;

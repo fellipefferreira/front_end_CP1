@@ -12,15 +12,24 @@ toggleHeart = () => {
 }
 //Função para abrir o slider de imagens
 let imageSlider = document.getElementById("container");
+let cardPreco = document.getElementById("card-preco");
+
 toggleSlider = () => {
     imageSlider.classList.toggle("open-slider")
+    cardPreco.classList.add("shreck")
 }
+
 //Função para fechar o slider de imagens
 let btn = document.querySelector(".close")
 let div = document.querySelector("#container")
+let cardPrec = document.getElementById("#card-preco");
+
 btn.addEventListener('click', () =>{
-    if(div.style.display === 'block'){
+    cardPreco.classList.remove("shreck")
+    
+    if(div.style.display == 'block'){
         div.style.display = 'none';
+        
     }else{
         div.style.display = 'none';
     }
